@@ -1,0 +1,263 @@
+{
+  "archive_name": "Streaming_CSV_Transaction_Parser_IMPLEMENTATION.zip",
+  "archive_sha256": "3e10f8d549f17ef5b65499c0d16212e022e7447721ffa99f57cdd4fa053b9295",
+  "archive_size_bytes": 2304482,
+  "verifier_scope": "Same agent, fresh extraction, fresh offline-installed virtual environment and subprocesses; not an institutionally independent verifier.",
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "venv",
+        "/tmp/csv_final_exact_pyl4889l/venv"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/csv_final_exact_pyl4889l/venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--find-links",
+        "/tmp/csv_final_exact_pyl4889l/source/wheelhouse",
+        "/tmp/csv_final_exact_pyl4889l/source/distribution/streaming_csv_parser-0.1.0-py3-none-any.whl",
+        "coverage==7.13.4",
+        "hypothesis==6.151.9",
+        "build==1.4.0",
+        "setuptools==84.0.0",
+        "packaging==26.3",
+        "pyproject_hooks==1.3.3"
+      ],
+      "exit_code": 0,
+      "stdout": "Looking in links: /tmp/csv_final_exact_pyl4889l/source/wheelhouse\nProcessing ./distribution/streaming_csv_parser-0.1.0-py3-none-any.whl\nProcessing ./wheelhouse/coverage-7.13.4-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl\nProcessing ./wheelhouse/hypothesis-6.151.9-py3-none-any.whl\nProcessing ./wheelhouse/build-1.4.0-py3-none-any.whl\nProcessing ./wheelhouse/setuptools-84.0.0-py3-none-any.whl\nProcessing ./wheelhouse/packaging-26.3-py3-none-any.whl\nProcessing ./wheelhouse/pyproject_hooks-1.3.3-py3-none-any.whl\nProcessing ./wheelhouse/sortedcontainers-2.4.0-py2.py3-none-any.whl (from hypothesis==6.151.9)\nInstalling collected packages: sortedcontainers, streaming-csv-parser, setuptools, pyproject_hooks, packaging, hypothesis, coverage, build\nSuccessfully installed build-1.4.0 coverage-7.13.4 hypothesis-6.151.9 packaging-26.3 pyproject_hooks-1.3.3 setuptools-84.0.0 sortedcontainers-2.4.0 streaming-csv-parser-0.1.0\n",
+      "stderr": "WARNING: The directory '/home/agent/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n"
+    },
+    {
+      "command": [
+        "/tmp/csv_final_exact_pyl4889l/venv/bin/python",
+        "codex/tools/coverage_gate.py",
+        "--root",
+        ".",
+        "--source",
+        "main.py",
+        "--source",
+        "src/streaming_csv_parser",
+        "--source",
+        "tools",
+        "--tests",
+        "tests",
+        "--json-out",
+        "/tmp/csv_final_exact_pyl4889l/python312_clean_offline_venv.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"assertion_sites_detected\": 187,\n  \"branch_percent\": 100.0,\n  \"branch_status\": \"REVIEW_ONLY_NOT_A_UNIVERSAL_GATE\",\n  \"coverage_pass\": true,\n  \"coverage_version\": \"7.13.4\",\n  \"covered_executable_statements\": 495,\n  \"excluded_lines\": 0,\n  \"files_in_scope\": 18,\n  \"first_party_executable_statements\": 495,\n  \"first_party_scope\": [\n    \"main.py\",\n    \"src/streaming_csv_parser\",\n    \"tools\"\n  ],\n  \"limitations\": [\n    \"Line execution does not establish semantic correctness or assertion adequacy.\",\n    \"AST policy scan is not a proof against dynamic/import-time mocking.\",\n    \"Coverage scope requires review against the complete first-party manifest.\"\n  ],\n  \"line_percent\": 100.0,\n  \"missing_first_party_files\": [],\n  \"missing_lines\": {},\n  \"policy\": \"PEHAVOS-COVERAGE-FIRST-1.2\",\n  \"reason\": \"100_PERCENT_LINES\",\n  \"source_hashes\": {\n    \"main.py\": \"6cebc7971155ea249fb86d310de683148fdb0f72e2fef19989acb114048cedde\",\n    \"src/streaming_csv_parser/__init__.py\": \"f32ff7efbb3460f4463106e74f07ac11354644bfe5144b2d450eb59086bc87bf\",\n    \"src/streaming_csv_parser/accounting.py\": \"a6db5d9ae7fe171df0a662081d1a791d6e4821f2b6464c39b12101823aba33b7\",\n    \"src/streaming_csv_parser/cli.py\": \"f2e78817638f661f119f57c956fbd731297cfd2dfd3b79d14e8a3821717f0ddf\",\n    \"src/streaming_csv_parser/commit.py\": \"b35ed3f4f6d04cfe0cdbe3b1d9e68e04503410fcd2f25495a1de87af06684640\",\n    \"src/streaming_csv_parser/config.py\": \"e4abe37c02b5f35f9c7ba66cb97a6c197f63b15f9fae84a079161efa7d062ec2\",\n    \"src/streaming_csv_parser/csv_stream.py\": \"0291de39cd6d19bcb2dc76da998249cf0e75078ce9d527a9aac2ea569dee3fdd\",\n    \"src/streaming_csv_parser/diagnostics.py\": \"3fcb6611dad2462b7ded7da6436ee11e5e984ba8aaf37eb137dfcf92e5b34171\",\n    \"src/streaming_csv_parser/errors.py\": \"c152ed84e08d387583c349046335418b3a01f2d3b029b11cc5f1cfd19f471fad\",\n    \"src/streaming_csv_parser/models.py\": \"c64ce720826c7af47a5187d4f84f9bd69f61a78e554b336ec735868f65e2acc0\",\n    \"src/streaming_csv_parser/orchestrator.py\": \"1b602930e79163323c16bf043c714b7b15ee8da400cad602175352800f02142d\",\n    \"src/streaming_csv_parser/reader.py\": \"77e0f8844ec4f1a707f4c24183b0bd57e37a90a81ac3277c1cfb311ab3c3bead\",\n    \"src/streaming_csv_parser/report.py\": \"9fb8b71a2ea690e462398fb83d14fbf4fd4e5e05d16c209270aa7e5ee5a1da86\",\n    \"src/streaming_csv_parser/seams.py\": \"56c019259b4a58bf7c134d931d51e7b437ff783a0f1517eeeef3a83ebb9a6395\",\n    \"src/streaming_csv_parser/validation.py\": \"3c69806e11519099589f217597636a40f00fc871f92b9d5bbcd94a98f2c5f81b\",\n    \"src/streaming_csv_parser/writer.py\": \"22114f3a8bd6e736cde43b10fd722173c27725cd0f80a7bdce782664e235f580\",\n    \"tests/test_acceptance_contract.py\": \"64cf619919f1e3365ff84deb4ce0933f90e2a5800ac5c4a28164bd86ea7b8fb4\",\n    \"tests/test_config_validation.py\": \"ecff54772fcd064a43de5868fc3c8b0b1bb331990b8f7bdff5bcdf97d1c149dc\",\n    \"tests/test_core_units.py\": \"4eae151eb5a4bfad2c42ef78c1b2d36bd496dbd8c1ea875421cf4f9cf4e72d1b\",\n    \"tests/test_fatal_and_replay.py\": \"4ca168f15554b97e2af6d5ee8db2b53b69404c425cfc2b1a5f78e23e96580e68\",\n    \"tests/test_integration_edges.py\": \"f38b7f30b8066c0f67759e8c6cd042abeb7af1ee9e1962a64041c57f744b342b\",\n    \"tests/test_model_correspondence.py\": \"614a66e42e029b4760b573ea7b55a361873849dd8bfbf2850b69597cc58864d2\",\n    \"tests/test_oracle_selfcheck.py\": \"5f5b4bcead9f21345a0de5bcd30c873873087f4b3ca9fc738308fa72eb3673b7\",\n    \"tests/test_properties.py\": \"f57b38444e265f9fb70c31d1136d1969bd7325186e7ce2bb090c4bdd47558983\",\n    \"tests/test_writer_failure_seams.py\": \"61f29867ae111a645c4d1d2a1d9cbfb2560a8ab6b4e7da4cd9b7deead30f906d\",\n    \"tools/benchmark.py\": \"47b408627441bd73778c5fb24bebaf68230ef2f5f893c510752e5a1abbc66960\",\n    \"tools/generate_synthetic.py\": \"cdbddd6cac349f08192671700ad2e99479024b204f49572da358977cb172787c\"\n  },\n  \"status\": \"PASS\",\n  \"test_log\": \"\\ntest_golden_mixed_exact_decimal_reconciliation_and_row_order (test_acceptance_contract.StreamingAcceptance.test_golden_mixed_exact_decimal_reconciliation_and_row_order) ... ok\\ntest_gzip_same_logical_totals_as_plain (test_acceptance_contract.StreamingAcceptance.test_gzip_same_logical_totals_as_plain) ... ok\\ntest_header_only_succeeds_with_zero_counts (test_acceptance_contract.StreamingAcceptance.test_header_only_succeeds_with_zero_counts) ... ok\\ntest_explicit_policy_rejects_invalid_configuration (test_config_validation.ConfigTests.test_explicit_policy_rejects_invalid_configuration) ... ok\\ntest_valid_policy_and_limits (test_config_validation.ConfigTests.test_valid_policy_and_limits) ... ok\\ntest_exact_large_totals_and_scales (test_core_units.CoreTests.test_exact_large_totals_and_scales) ... ok\\ntest_logical_records_preserve_multiline_and_spans (test_core_units.CoreTests.test_logical_records_preserve_multiline_and_spans) ... ok\\ntest_physical_boundaries_cr_lf_and_limits (test_core_units.CoreTests.test_physical_boundaries_cr_lf_and_limits) ... ok\\ntest_reports_and_sanitized_progress (test_core_units.CoreTests.test_reports_and_sanitized_progress) ... ok\\ntest_validation_invalid_and_boundary_cases (test_core_units.CoreTests.test_validation_invalid_and_boundary_cases) ... ok\\ntest_python_file_scope_and_uncovered_negative_control (test_core_units.CoverageToolCalibration.test_python_file_scope_and_uncovered_negative_control) ... ok\\ntest_oversized_record_fails_without_commit (test_fatal_and_replay.FailureAcceptance.test_oversized_record_fails_without_commit) ... ok\\ntest_repeated_run_never_appends (test_fatal_and_replay.FailureAcceptance.test_repeated_run_never_appends) ... ok\\ntest_truncated_gzip_never_commits (test_fatal_and_replay.FailureAcceptance.test_truncated_gzip_never_commits) ... ok\\ntest_unterminated_quote_never_commits (test_fatal_and_replay.FailureAcceptance.test_unterminated_quote_never_commits) ... ok\\ntest_zero_byte_and_invalid_batch_size_fatal (test_fatal_and_replay.FailureAcceptance.test_zero_byte_and_invalid_batch_size_fatal) ... ok\\ntest_kernel_measurements_success_failure_and_timeout (test_integration_edges.BenchmarkHarnessTests.test_kernel_measurements_success_failure_and_timeout) ... ok\\ntest_entrypoint_execution_rejects_unrecognized_runner_arguments (test_integration_edges.EntrypointTests.test_entrypoint_execution_rejects_unrecognized_runner_arguments) ... ok\\ntest_gzip_generator_and_byte_budget (test_integration_edges.EntrypointTests.test_gzip_generator_and_byte_budget) ... ok\\ntest_cli_and_source_entrypoint (test_integration_edges.IntegrationTests.test_cli_and_source_entrypoint) ... ok\\ntest_header_rejection_stop_decode_and_gzip_failures (test_integration_edges.IntegrationTests.test_header_rejection_stop_decode_and_gzip_failures) ... ok\\ntest_library_golden_real_marker_hashes_and_permissions (test_integration_edges.IntegrationTests.test_library_golden_real_marker_hashes_and_permissions) ... ok\\ntest_synthetic_generator_independent_reference (test_integration_edges.IntegrationTests.test_synthetic_generator_independent_reference) ... ok\\ntest_crc_corruption_and_wrong_headers_never_commit (test_integration_edges.ProvenanceAndIntegrityTests.test_crc_corruption_and_wrong_headers_never_commit) ... ok\\ntest_exact_rejected_multiline_raw_record_and_location (test_integration_edges.ProvenanceAndIntegrityTests.test_exact_rejected_multiline_raw_record_and_location) ... ok\\ntest_finite_reconciliation_model_correspondence (test_model_correspondence.ProtocolTests.test_finite_reconciliation_model_correspondence) ... ok\\ntest_two_processes_same_target_and_sigterm_replay (test_model_correspondence.ProtocolTests.test_two_processes_same_target_and_sigterm_replay) ... ok\\ntest_negative_control_detects_dropped_row_and_float_rounding (test_oracle_selfcheck.GoldenReferenceCalibration.test_negative_control_detects_dropped_row_and_float_rounding) ... ok\\ntest_positive_control (test_oracle_selfcheck.GoldenReferenceCalibration.test_positive_control) ... ok\\ntest_batch_row_order_and_gzip_metamorphic (test_properties.GeneratedChecks.test_batch_row_order_and_gzip_metamorphic) ... ok\\ntest_byte_fuzz_is_bounded_and_does_not_resynchronize (test_properties.GeneratedChecks.test_byte_fuzz_is_bounded_and_does_not_resynchronize) ... ok\\ntest_csv_differential (test_properties.GeneratedChecks.test_csv_differential) ... ok\\ntest_feynman_resource_counterexamples (test_properties.GeneratedChecks.test_feynman_resource_counterexamples) ... ok\\ntest_integer_ledger_against_decimal (test_properties.GeneratedChecks.test_integer_ledger_against_decimal) ... ok\\nrunTest (hypothesis.stateful.LedgerProtocol.TestCase.runTest) ... ok\\ntest_interruption_records_incomplete_attempt (test_writer_failure_seams.FailureTests.test_interruption_records_incomplete_attempt) ... ok\\ntest_symlink_components_and_existing_target_refused (test_writer_failure_seams.FailureTests.test_symlink_components_and_existing_target_refused) ... ok\\ntest_write_failure_never_publishes (test_writer_failure_seams.FailureTests.test_write_failure_never_publishes) ... ok\\ntest_changed_input_and_failed_diagnostics_do_not_commit (test_writer_failure_seams.PublicationTests.test_changed_input_and_failed_diagnostics_do_not_commit) ... ok\\ntest_failed_publication_revokes_marker (test_writer_failure_seams.PublicationTests.test_failed_publication_revokes_marker) ... ok\\ntest_actual_unwritable_output_parent (test_writer_failure_seams.RealPermissionTests.test_actual_unwritable_output_parent) ... ok\\n\\n----------------------------------------------------------------------\\nRan 41 tests in 3.480s\\n\\nOK\\n\",\n  \"test_method\": \"unittest discover executed under coverage.py\",\n  \"test_returncode\": 0,\n  \"tests_run\": 41\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/csv-python313/bin/python",
+        "codex/tools/coverage_gate.py",
+        "--root",
+        ".",
+        "--source",
+        "main.py",
+        "--source",
+        "src/streaming_csv_parser",
+        "--source",
+        "tools",
+        "--tests",
+        "tests",
+        "--json-out",
+        "/tmp/csv_final_exact_pyl4889l/python313.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"assertion_sites_detected\": 187,\n  \"branch_percent\": 100.0,\n  \"branch_status\": \"REVIEW_ONLY_NOT_A_UNIVERSAL_GATE\",\n  \"coverage_pass\": true,\n  \"coverage_version\": \"7.13.4\",\n  \"covered_executable_statements\": 495,\n  \"excluded_lines\": 0,\n  \"files_in_scope\": 18,\n  \"first_party_executable_statements\": 495,\n  \"first_party_scope\": [\n    \"main.py\",\n    \"src/streaming_csv_parser\",\n    \"tools\"\n  ],\n  \"limitations\": [\n    \"Line execution does not establish semantic correctness or assertion adequacy.\",\n    \"AST policy scan is not a proof against dynamic/import-time mocking.\",\n    \"Coverage scope requires review against the complete first-party manifest.\"\n  ],\n  \"line_percent\": 100.0,\n  \"missing_first_party_files\": [],\n  \"missing_lines\": {},\n  \"policy\": \"PEHAVOS-COVERAGE-FIRST-1.2\",\n  \"reason\": \"100_PERCENT_LINES\",\n  \"source_hashes\": {\n    \"main.py\": \"6cebc7971155ea249fb86d310de683148fdb0f72e2fef19989acb114048cedde\",\n    \"src/streaming_csv_parser/__init__.py\": \"f32ff7efbb3460f4463106e74f07ac11354644bfe5144b2d450eb59086bc87bf\",\n    \"src/streaming_csv_parser/accounting.py\": \"a6db5d9ae7fe171df0a662081d1a791d6e4821f2b6464c39b12101823aba33b7\",\n    \"src/streaming_csv_parser/cli.py\": \"f2e78817638f661f119f57c956fbd731297cfd2dfd3b79d14e8a3821717f0ddf\",\n    \"src/streaming_csv_parser/commit.py\": \"b35ed3f4f6d04cfe0cdbe3b1d9e68e04503410fcd2f25495a1de87af06684640\",\n    \"src/streaming_csv_parser/config.py\": \"e4abe37c02b5f35f9c7ba66cb97a6c197f63b15f9fae84a079161efa7d062ec2\",\n    \"src/streaming_csv_parser/csv_stream.py\": \"0291de39cd6d19bcb2dc76da998249cf0e75078ce9d527a9aac2ea569dee3fdd\",\n    \"src/streaming_csv_parser/diagnostics.py\": \"3fcb6611dad2462b7ded7da6436ee11e5e984ba8aaf37eb137dfcf92e5b34171\",\n    \"src/streaming_csv_parser/errors.py\": \"c152ed84e08d387583c349046335418b3a01f2d3b029b11cc5f1cfd19f471fad\",\n    \"src/streaming_csv_parser/models.py\": \"c64ce720826c7af47a5187d4f84f9bd69f61a78e554b336ec735868f65e2acc0\",\n    \"src/streaming_csv_parser/orchestrator.py\": \"1b602930e79163323c16bf043c714b7b15ee8da400cad602175352800f02142d\",\n    \"src/streaming_csv_parser/reader.py\": \"77e0f8844ec4f1a707f4c24183b0bd57e37a90a81ac3277c1cfb311ab3c3bead\",\n    \"src/streaming_csv_parser/report.py\": \"9fb8b71a2ea690e462398fb83d14fbf4fd4e5e05d16c209270aa7e5ee5a1da86\",\n    \"src/streaming_csv_parser/seams.py\": \"56c019259b4a58bf7c134d931d51e7b437ff783a0f1517eeeef3a83ebb9a6395\",\n    \"src/streaming_csv_parser/validation.py\": \"3c69806e11519099589f217597636a40f00fc871f92b9d5bbcd94a98f2c5f81b\",\n    \"src/streaming_csv_parser/writer.py\": \"22114f3a8bd6e736cde43b10fd722173c27725cd0f80a7bdce782664e235f580\",\n    \"tests/test_acceptance_contract.py\": \"64cf619919f1e3365ff84deb4ce0933f90e2a5800ac5c4a28164bd86ea7b8fb4\",\n    \"tests/test_config_validation.py\": \"ecff54772fcd064a43de5868fc3c8b0b1bb331990b8f7bdff5bcdf97d1c149dc\",\n    \"tests/test_core_units.py\": \"4eae151eb5a4bfad2c42ef78c1b2d36bd496dbd8c1ea875421cf4f9cf4e72d1b\",\n    \"tests/test_fatal_and_replay.py\": \"4ca168f15554b97e2af6d5ee8db2b53b69404c425cfc2b1a5f78e23e96580e68\",\n    \"tests/test_integration_edges.py\": \"f38b7f30b8066c0f67759e8c6cd042abeb7af1ee9e1962a64041c57f744b342b\",\n    \"tests/test_model_correspondence.py\": \"614a66e42e029b4760b573ea7b55a361873849dd8bfbf2850b69597cc58864d2\",\n    \"tests/test_oracle_selfcheck.py\": \"5f5b4bcead9f21345a0de5bcd30c873873087f4b3ca9fc738308fa72eb3673b7\",\n    \"tests/test_properties.py\": \"f57b38444e265f9fb70c31d1136d1969bd7325186e7ce2bb090c4bdd47558983\",\n    \"tests/test_writer_failure_seams.py\": \"61f29867ae111a645c4d1d2a1d9cbfb2560a8ab6b4e7da4cd9b7deead30f906d\",\n    \"tools/benchmark.py\": \"47b408627441bd73778c5fb24bebaf68230ef2f5f893c510752e5a1abbc66960\",\n    \"tools/generate_synthetic.py\": \"cdbddd6cac349f08192671700ad2e99479024b204f49572da358977cb172787c\"\n  },\n  \"status\": \"PASS\",\n  \"test_log\": \"\\ntest_golden_mixed_exact_decimal_reconciliation_and_row_order (test_acceptance_contract.StreamingAcceptance.test_golden_mixed_exact_decimal_reconciliation_and_row_order) ... ok\\ntest_gzip_same_logical_totals_as_plain (test_acceptance_contract.StreamingAcceptance.test_gzip_same_logical_totals_as_plain) ... ok\\ntest_header_only_succeeds_with_zero_counts (test_acceptance_contract.StreamingAcceptance.test_header_only_succeeds_with_zero_counts) ... ok\\ntest_explicit_policy_rejects_invalid_configuration (test_config_validation.ConfigTests.test_explicit_policy_rejects_invalid_configuration) ... ok\\ntest_valid_policy_and_limits (test_config_validation.ConfigTests.test_valid_policy_and_limits) ... ok\\ntest_exact_large_totals_and_scales (test_core_units.CoreTests.test_exact_large_totals_and_scales) ... ok\\ntest_logical_records_preserve_multiline_and_spans (test_core_units.CoreTests.test_logical_records_preserve_multiline_and_spans) ... ok\\ntest_physical_boundaries_cr_lf_and_limits (test_core_units.CoreTests.test_physical_boundaries_cr_lf_and_limits) ... ok\\ntest_reports_and_sanitized_progress (test_core_units.CoreTests.test_reports_and_sanitized_progress) ... ok\\ntest_validation_invalid_and_boundary_cases (test_core_units.CoreTests.test_validation_invalid_and_boundary_cases) ... ok\\ntest_python_file_scope_and_uncovered_negative_control (test_core_units.CoverageToolCalibration.test_python_file_scope_and_uncovered_negative_control) ... ok\\ntest_oversized_record_fails_without_commit (test_fatal_and_replay.FailureAcceptance.test_oversized_record_fails_without_commit) ... ok\\ntest_repeated_run_never_appends (test_fatal_and_replay.FailureAcceptance.test_repeated_run_never_appends) ... ok\\ntest_truncated_gzip_never_commits (test_fatal_and_replay.FailureAcceptance.test_truncated_gzip_never_commits) ... ok\\ntest_unterminated_quote_never_commits (test_fatal_and_replay.FailureAcceptance.test_unterminated_quote_never_commits) ... ok\\ntest_zero_byte_and_invalid_batch_size_fatal (test_fatal_and_replay.FailureAcceptance.test_zero_byte_and_invalid_batch_size_fatal) ... ok\\ntest_kernel_measurements_success_failure_and_timeout (test_integration_edges.BenchmarkHarnessTests.test_kernel_measurements_success_failure_and_timeout) ... ok\\ntest_entrypoint_execution_rejects_unrecognized_runner_arguments (test_integration_edges.EntrypointTests.test_entrypoint_execution_rejects_unrecognized_runner_arguments) ... ok\\ntest_gzip_generator_and_byte_budget (test_integration_edges.EntrypointTests.test_gzip_generator_and_byte_budget) ... ok\\ntest_cli_and_source_entrypoint (test_integration_edges.IntegrationTests.test_cli_and_source_entrypoint) ... ok\\ntest_header_rejection_stop_decode_and_gzip_failures (test_integration_edges.IntegrationTests.test_header_rejection_stop_decode_and_gzip_failures) ... ok\\ntest_library_golden_real_marker_hashes_and_permissions (test_integration_edges.IntegrationTests.test_library_golden_real_marker_hashes_and_permissions) ... ok\\ntest_synthetic_generator_independent_reference (test_integration_edges.IntegrationTests.test_synthetic_generator_independent_reference) ... ok\\ntest_crc_corruption_and_wrong_headers_never_commit (test_integration_edges.ProvenanceAndIntegrityTests.test_crc_corruption_and_wrong_headers_never_commit) ... ok\\ntest_exact_rejected_multiline_raw_record_and_location (test_integration_edges.ProvenanceAndIntegrityTests.test_exact_rejected_multiline_raw_record_and_location) ... ok\\ntest_finite_reconciliation_model_correspondence (test_model_correspondence.ProtocolTests.test_finite_reconciliation_model_correspondence) ... ok\\ntest_two_processes_same_target_and_sigterm_replay (test_model_correspondence.ProtocolTests.test_two_processes_same_target_and_sigterm_replay) ... ok\\ntest_negative_control_detects_dropped_row_and_float_rounding (test_oracle_selfcheck.GoldenReferenceCalibration.test_negative_control_detects_dropped_row_and_float_rounding) ... ok\\ntest_positive_control (test_oracle_selfcheck.GoldenReferenceCalibration.test_positive_control) ... ok\\ntest_batch_row_order_and_gzip_metamorphic (test_properties.GeneratedChecks.test_batch_row_order_and_gzip_metamorphic) ... ok\\ntest_byte_fuzz_is_bounded_and_does_not_resynchronize (test_properties.GeneratedChecks.test_byte_fuzz_is_bounded_and_does_not_resynchronize) ... ok\\ntest_csv_differential (test_properties.GeneratedChecks.test_csv_differential) ... ok\\ntest_feynman_resource_counterexamples (test_properties.GeneratedChecks.test_feynman_resource_counterexamples) ... ok\\ntest_integer_ledger_against_decimal (test_properties.GeneratedChecks.test_integer_ledger_against_decimal) ... ok\\nrunTest (hypothesis.stateful.LedgerProtocol.TestCase.runTest) ... ok\\ntest_interruption_records_incomplete_attempt (test_writer_failure_seams.FailureTests.test_interruption_records_incomplete_attempt) ... ok\\ntest_symlink_components_and_existing_target_refused (test_writer_failure_seams.FailureTests.test_symlink_components_and_existing_target_refused) ... ok\\ntest_write_failure_never_publishes (test_writer_failure_seams.FailureTests.test_write_failure_never_publishes) ... ok\\ntest_changed_input_and_failed_diagnostics_do_not_commit (test_writer_failure_seams.PublicationTests.test_changed_input_and_failed_diagnostics_do_not_commit) ... ok\\ntest_failed_publication_revokes_marker (test_writer_failure_seams.PublicationTests.test_failed_publication_revokes_marker) ... ok\\ntest_actual_unwritable_output_parent (test_writer_failure_seams.RealPermissionTests.test_actual_unwritable_output_parent) ... ok\\n\\n----------------------------------------------------------------------\\nRan 41 tests in 3.108s\\n\\nOK\\n\",\n  \"test_method\": \"unittest discover executed under coverage.py\",\n  \"test_returncode\": 0,\n  \"tests_run\": 41\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/csv_final_exact_pyl4889l/venv/bin/streaming-csv-parser",
+        "--input",
+        "/tmp/csv_final_exact_pyl4889l/source/tests/fixtures/GOLDEN_MIXED.csv",
+        "--output",
+        "/tmp/csv_final_exact_pyl4889l/installed-output",
+        "--schema",
+        "/tmp/csv_final_exact_pyl4889l/source/tests/fixtures/TEST_ONLY_SCHEMA.json"
+      ],
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "FINALIZING examined=5\n"
+    },
+    {
+      "command": [
+        "/workspace/csv-tools/lean-4.19.0-linux/bin/lean",
+        "tests/reconciliation.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "human_release_approval": "NOT_GRANTED",
+  "status": "LOCAL_VERIFICATION_PASS_TARGET_ACCEPTANCE_PENDING",
+  "verified_manifest_files": 135,
+  "replays": {
+    "python312_clean_offline_venv": {
+      "assertion_sites_detected": 187,
+      "branch_percent": 100.0,
+      "branch_status": "REVIEW_ONLY_NOT_A_UNIVERSAL_GATE",
+      "coverage_pass": true,
+      "coverage_version": "7.13.4",
+      "covered_executable_statements": 495,
+      "excluded_lines": 0,
+      "files_in_scope": 18,
+      "first_party_executable_statements": 495,
+      "first_party_scope": [
+        "main.py",
+        "src/streaming_csv_parser",
+        "tools"
+      ],
+      "limitations": [
+        "Line execution does not establish semantic correctness or assertion adequacy.",
+        "AST policy scan is not a proof against dynamic/import-time mocking.",
+        "Coverage scope requires review against the complete first-party manifest."
+      ],
+      "line_percent": 100.0,
+      "missing_first_party_files": [],
+      "missing_lines": {},
+      "policy": "PEHAVOS-COVERAGE-FIRST-1.2",
+      "reason": "100_PERCENT_LINES",
+      "source_hashes": {
+        "main.py": "6cebc7971155ea249fb86d310de683148fdb0f72e2fef19989acb114048cedde",
+        "src/streaming_csv_parser/__init__.py": "f32ff7efbb3460f4463106e74f07ac11354644bfe5144b2d450eb59086bc87bf",
+        "src/streaming_csv_parser/accounting.py": "a6db5d9ae7fe171df0a662081d1a791d6e4821f2b6464c39b12101823aba33b7",
+        "src/streaming_csv_parser/cli.py": "f2e78817638f661f119f57c956fbd731297cfd2dfd3b79d14e8a3821717f0ddf",
+        "src/streaming_csv_parser/commit.py": "b35ed3f4f6d04cfe0cdbe3b1d9e68e04503410fcd2f25495a1de87af06684640",
+        "src/streaming_csv_parser/config.py": "e4abe37c02b5f35f9c7ba66cb97a6c197f63b15f9fae84a079161efa7d062ec2",
+        "src/streaming_csv_parser/csv_stream.py": "0291de39cd6d19bcb2dc76da998249cf0e75078ce9d527a9aac2ea569dee3fdd",
+        "src/streaming_csv_parser/diagnostics.py": "3fcb6611dad2462b7ded7da6436ee11e5e984ba8aaf37eb137dfcf92e5b34171",
+        "src/streaming_csv_parser/errors.py": "c152ed84e08d387583c349046335418b3a01f2d3b029b11cc5f1cfd19f471fad",
+        "src/streaming_csv_parser/models.py": "c64ce720826c7af47a5187d4f84f9bd69f61a78e554b336ec735868f65e2acc0",
+        "src/streaming_csv_parser/orchestrator.py": "1b602930e79163323c16bf043c714b7b15ee8da400cad602175352800f02142d",
+        "src/streaming_csv_parser/reader.py": "77e0f8844ec4f1a707f4c24183b0bd57e37a90a81ac3277c1cfb311ab3c3bead",
+        "src/streaming_csv_parser/report.py": "9fb8b71a2ea690e462398fb83d14fbf4fd4e5e05d16c209270aa7e5ee5a1da86",
+        "src/streaming_csv_parser/seams.py": "56c019259b4a58bf7c134d931d51e7b437ff783a0f1517eeeef3a83ebb9a6395",
+        "src/streaming_csv_parser/validation.py": "3c69806e11519099589f217597636a40f00fc871f92b9d5bbcd94a98f2c5f81b",
+        "src/streaming_csv_parser/writer.py": "22114f3a8bd6e736cde43b10fd722173c27725cd0f80a7bdce782664e235f580",
+        "tests/test_acceptance_contract.py": "64cf619919f1e3365ff84deb4ce0933f90e2a5800ac5c4a28164bd86ea7b8fb4",
+        "tests/test_config_validation.py": "ecff54772fcd064a43de5868fc3c8b0b1bb331990b8f7bdff5bcdf97d1c149dc",
+        "tests/test_core_units.py": "4eae151eb5a4bfad2c42ef78c1b2d36bd496dbd8c1ea875421cf4f9cf4e72d1b",
+        "tests/test_fatal_and_replay.py": "4ca168f15554b97e2af6d5ee8db2b53b69404c425cfc2b1a5f78e23e96580e68",
+        "tests/test_integration_edges.py": "f38b7f30b8066c0f67759e8c6cd042abeb7af1ee9e1962a64041c57f744b342b",
+        "tests/test_model_correspondence.py": "614a66e42e029b4760b573ea7b55a361873849dd8bfbf2850b69597cc58864d2",
+        "tests/test_oracle_selfcheck.py": "5f5b4bcead9f21345a0de5bcd30c873873087f4b3ca9fc738308fa72eb3673b7",
+        "tests/test_properties.py": "f57b38444e265f9fb70c31d1136d1969bd7325186e7ce2bb090c4bdd47558983",
+        "tests/test_writer_failure_seams.py": "61f29867ae111a645c4d1d2a1d9cbfb2560a8ab6b4e7da4cd9b7deead30f906d",
+        "tools/benchmark.py": "47b408627441bd73778c5fb24bebaf68230ef2f5f893c510752e5a1abbc66960",
+        "tools/generate_synthetic.py": "cdbddd6cac349f08192671700ad2e99479024b204f49572da358977cb172787c"
+      },
+      "status": "PASS",
+      "test_log": "\ntest_golden_mixed_exact_decimal_reconciliation_and_row_order (test_acceptance_contract.StreamingAcceptance.test_golden_mixed_exact_decimal_reconciliation_and_row_order) ... ok\ntest_gzip_same_logical_totals_as_plain (test_acceptance_contract.StreamingAcceptance.test_gzip_same_logical_totals_as_plain) ... ok\ntest_header_only_succeeds_with_zero_counts (test_acceptance_contract.StreamingAcceptance.test_header_only_succeeds_with_zero_counts) ... ok\ntest_explicit_policy_rejects_invalid_configuration (test_config_validation.ConfigTests.test_explicit_policy_rejects_invalid_configuration) ... ok\ntest_valid_policy_and_limits (test_config_validation.ConfigTests.test_valid_policy_and_limits) ... ok\ntest_exact_large_totals_and_scales (test_core_units.CoreTests.test_exact_large_totals_and_scales) ... ok\ntest_logical_records_preserve_multiline_and_spans (test_core_units.CoreTests.test_logical_records_preserve_multiline_and_spans) ... ok\ntest_physical_boundaries_cr_lf_and_limits (test_core_units.CoreTests.test_physical_boundaries_cr_lf_and_limits) ... ok\ntest_reports_and_sanitized_progress (test_core_units.CoreTests.test_reports_and_sanitized_progress) ... ok\ntest_validation_invalid_and_boundary_cases (test_core_units.CoreTests.test_validation_invalid_and_boundary_cases) ... ok\ntest_python_file_scope_and_uncovered_negative_control (test_core_units.CoverageToolCalibration.test_python_file_scope_and_uncovered_negative_control) ... ok\ntest_oversized_record_fails_without_commit (test_fatal_and_replay.FailureAcceptance.test_oversized_record_fails_without_commit) ... ok\ntest_repeated_run_never_appends (test_fatal_and_replay.FailureAcceptance.test_repeated_run_never_appends) ... ok\ntest_truncated_gzip_never_commits (test_fatal_and_replay.FailureAcceptance.test_truncated_gzip_never_commits) ... ok\ntest_unterminated_quote_never_commits (test_fatal_and_replay.FailureAcceptance.test_unterminated_quote_never_commits) ... ok\ntest_zero_byte_and_invalid_batch_size_fatal (test_fatal_and_replay.FailureAcceptance.test_zero_byte_and_invalid_batch_size_fatal) ... ok\ntest_kernel_measurements_success_failure_and_timeout (test_integration_edges.BenchmarkHarnessTests.test_kernel_measurements_success_failure_and_timeout) ... ok\ntest_entrypoint_execution_rejects_unrecognized_runner_arguments (test_integration_edges.EntrypointTests.test_entrypoint_execution_rejects_unrecognized_runner_arguments) ... ok\ntest_gzip_generator_and_byte_budget (test_integration_edges.EntrypointTests.test_gzip_generator_and_byte_budget) ... ok\ntest_cli_and_source_entrypoint (test_integration_edges.IntegrationTests.test_cli_and_source_entrypoint) ... ok\ntest_header_rejection_stop_decode_and_gzip_failures (test_integration_edges.IntegrationTests.test_header_rejection_stop_decode_and_gzip_failures) ... ok\ntest_library_golden_real_marker_hashes_and_permissions (test_integration_edges.IntegrationTests.test_library_golden_real_marker_hashes_and_permissions) ... ok\ntest_synthetic_generator_independent_reference (test_integration_edges.IntegrationTests.test_synthetic_generator_independent_reference) ... ok\ntest_crc_corruption_and_wrong_headers_never_commit (test_integration_edges.ProvenanceAndIntegrityTests.test_crc_corruption_and_wrong_headers_never_commit) ... ok\ntest_exact_rejected_multiline_raw_record_and_location (test_integration_edges.ProvenanceAndIntegrityTests.test_exact_rejected_multiline_raw_record_and_location) ... ok\ntest_finite_reconciliation_model_correspondence (test_model_correspondence.ProtocolTests.test_finite_reconciliation_model_correspondence) ... ok\ntest_two_processes_same_target_and_sigterm_replay (test_model_correspondence.ProtocolTests.test_two_processes_same_target_and_sigterm_replay) ... ok\ntest_negative_control_detects_dropped_row_and_float_rounding (test_oracle_selfcheck.GoldenReferenceCalibration.test_negative_control_detects_dropped_row_and_float_rounding) ... ok\ntest_positive_control (test_oracle_selfcheck.GoldenReferenceCalibration.test_positive_control) ... ok\ntest_batch_row_order_and_gzip_metamorphic (test_properties.GeneratedChecks.test_batch_row_order_and_gzip_metamorphic) ... ok\ntest_byte_fuzz_is_bounded_and_does_not_resynchronize (test_properties.GeneratedChecks.test_byte_fuzz_is_bounded_and_does_not_resynchronize) ... ok\ntest_csv_differential (test_properties.GeneratedChecks.test_csv_differential) ... ok\ntest_feynman_resource_counterexamples (test_properties.GeneratedChecks.test_feynman_resource_counterexamples) ... ok\ntest_integer_ledger_against_decimal (test_properties.GeneratedChecks.test_integer_ledger_against_decimal) ... ok\nrunTest (hypothesis.stateful.LedgerProtocol.TestCase.runTest) ... ok\ntest_interruption_records_incomplete_attempt (test_writer_failure_seams.FailureTests.test_interruption_records_incomplete_attempt) ... ok\ntest_symlink_components_and_existing_target_refused (test_writer_failure_seams.FailureTests.test_symlink_components_and_existing_target_refused) ... ok\ntest_write_failure_never_publishes (test_writer_failure_seams.FailureTests.test_write_failure_never_publishes) ... ok\ntest_changed_input_and_failed_diagnostics_do_not_commit (test_writer_failure_seams.PublicationTests.test_changed_input_and_failed_diagnostics_do_not_commit) ... ok\ntest_failed_publication_revokes_marker (test_writer_failure_seams.PublicationTests.test_failed_publication_revokes_marker) ... ok\ntest_actual_unwritable_output_parent (test_writer_failure_seams.RealPermissionTests.test_actual_unwritable_output_parent) ... ok\n\n----------------------------------------------------------------------\nRan 41 tests in 3.480s\n\nOK\n",
+      "test_method": "unittest discover executed under coverage.py",
+      "test_returncode": 0,
+      "tests_run": 41
+    },
+    "python313": {
+      "assertion_sites_detected": 187,
+      "branch_percent": 100.0,
+      "branch_status": "REVIEW_ONLY_NOT_A_UNIVERSAL_GATE",
+      "coverage_pass": true,
+      "coverage_version": "7.13.4",
+      "covered_executable_statements": 495,
+      "excluded_lines": 0,
+      "files_in_scope": 18,
+      "first_party_executable_statements": 495,
+      "first_party_scope": [
+        "main.py",
+        "src/streaming_csv_parser",
+        "tools"
+      ],
+      "limitations": [
+        "Line execution does not establish semantic correctness or assertion adequacy.",
+        "AST policy scan is not a proof against dynamic/import-time mocking.",
+        "Coverage scope requires review against the complete first-party manifest."
+      ],
+      "line_percent": 100.0,
+      "missing_first_party_files": [],
+      "missing_lines": {},
+      "policy": "PEHAVOS-COVERAGE-FIRST-1.2",
+      "reason": "100_PERCENT_LINES",
+      "source_hashes": {
+        "main.py": "6cebc7971155ea249fb86d310de683148fdb0f72e2fef19989acb114048cedde",
+        "src/streaming_csv_parser/__init__.py": "f32ff7efbb3460f4463106e74f07ac11354644bfe5144b2d450eb59086bc87bf",
+        "src/streaming_csv_parser/accounting.py": "a6db5d9ae7fe171df0a662081d1a791d6e4821f2b6464c39b12101823aba33b7",
+        "src/streaming_csv_parser/cli.py": "f2e78817638f661f119f57c956fbd731297cfd2dfd3b79d14e8a3821717f0ddf",
+        "src/streaming_csv_parser/commit.py": "b35ed3f4f6d04cfe0cdbe3b1d9e68e04503410fcd2f25495a1de87af06684640",
+        "src/streaming_csv_parser/config.py": "e4abe37c02b5f35f9c7ba66cb97a6c197f63b15f9fae84a079161efa7d062ec2",
+        "src/streaming_csv_parser/csv_stream.py": "0291de39cd6d19bcb2dc76da998249cf0e75078ce9d527a9aac2ea569dee3fdd",
+        "src/streaming_csv_parser/diagnostics.py": "3fcb6611dad2462b7ded7da6436ee11e5e984ba8aaf37eb137dfcf92e5b34171",
+        "src/streaming_csv_parser/errors.py": "c152ed84e08d387583c349046335418b3a01f2d3b029b11cc5f1cfd19f471fad",
+        "src/streaming_csv_parser/models.py": "c64ce720826c7af47a5187d4f84f9bd69f61a78e554b336ec735868f65e2acc0",
+        "src/streaming_csv_parser/orchestrator.py": "1b602930e79163323c16bf043c714b7b15ee8da400cad602175352800f02142d",
+        "src/streaming_csv_parser/reader.py": "77e0f8844ec4f1a707f4c24183b0bd57e37a90a81ac3277c1cfb311ab3c3bead",
+        "src/streaming_csv_parser/report.py": "9fb8b71a2ea690e462398fb83d14fbf4fd4e5e05d16c209270aa7e5ee5a1da86",
+        "src/streaming_csv_parser/seams.py": "56c019259b4a58bf7c134d931d51e7b437ff783a0f1517eeeef3a83ebb9a6395",
+        "src/streaming_csv_parser/validation.py": "3c69806e11519099589f217597636a40f00fc871f92b9d5bbcd94a98f2c5f81b",
+        "src/streaming_csv_parser/writer.py": "22114f3a8bd6e736cde43b10fd722173c27725cd0f80a7bdce782664e235f580",
+        "tests/test_acceptance_contract.py": "64cf619919f1e3365ff84deb4ce0933f90e2a5800ac5c4a28164bd86ea7b8fb4",
+        "tests/test_config_validation.py": "ecff54772fcd064a43de5868fc3c8b0b1bb331990b8f7bdff5bcdf97d1c149dc",
+        "tests/test_core_units.py": "4eae151eb5a4bfad2c42ef78c1b2d36bd496dbd8c1ea875421cf4f9cf4e72d1b",
+        "tests/test_fatal_and_replay.py": "4ca168f15554b97e2af6d5ee8db2b53b69404c425cfc2b1a5f78e23e96580e68",
+        "tests/test_integration_edges.py": "f38b7f30b8066c0f67759e8c6cd042abeb7af1ee9e1962a64041c57f744b342b",
+        "tests/test_model_correspondence.py": "614a66e42e029b4760b573ea7b55a361873849dd8bfbf2850b69597cc58864d2",
+        "tests/test_oracle_selfcheck.py": "5f5b4bcead9f21345a0de5bcd30c873873087f4b3ca9fc738308fa72eb3673b7",
+        "tests/test_properties.py": "f57b38444e265f9fb70c31d1136d1969bd7325186e7ce2bb090c4bdd47558983",
+        "tests/test_writer_failure_seams.py": "61f29867ae111a645c4d1d2a1d9cbfb2560a8ab6b4e7da4cd9b7deead30f906d",
+        "tools/benchmark.py": "47b408627441bd73778c5fb24bebaf68230ef2f5f893c510752e5a1abbc66960",
+        "tools/generate_synthetic.py": "cdbddd6cac349f08192671700ad2e99479024b204f49572da358977cb172787c"
+      },
+      "status": "PASS",
+      "test_log": "\ntest_golden_mixed_exact_decimal_reconciliation_and_row_order (test_acceptance_contract.StreamingAcceptance.test_golden_mixed_exact_decimal_reconciliation_and_row_order) ... ok\ntest_gzip_same_logical_totals_as_plain (test_acceptance_contract.StreamingAcceptance.test_gzip_same_logical_totals_as_plain) ... ok\ntest_header_only_succeeds_with_zero_counts (test_acceptance_contract.StreamingAcceptance.test_header_only_succeeds_with_zero_counts) ... ok\ntest_explicit_policy_rejects_invalid_configuration (test_config_validation.ConfigTests.test_explicit_policy_rejects_invalid_configuration) ... ok\ntest_valid_policy_and_limits (test_config_validation.ConfigTests.test_valid_policy_and_limits) ... ok\ntest_exact_large_totals_and_scales (test_core_units.CoreTests.test_exact_large_totals_and_scales) ... ok\ntest_logical_records_preserve_multiline_and_spans (test_core_units.CoreTests.test_logical_records_preserve_multiline_and_spans) ... ok\ntest_physical_boundaries_cr_lf_and_limits (test_core_units.CoreTests.test_physical_boundaries_cr_lf_and_limits) ... ok\ntest_reports_and_sanitized_progress (test_core_units.CoreTests.test_reports_and_sanitized_progress) ... ok\ntest_validation_invalid_and_boundary_cases (test_core_units.CoreTests.test_validation_invalid_and_boundary_cases) ... ok\ntest_python_file_scope_and_uncovered_negative_control (test_core_units.CoverageToolCalibration.test_python_file_scope_and_uncovered_negative_control) ... ok\ntest_oversized_record_fails_without_commit (test_fatal_and_replay.FailureAcceptance.test_oversized_record_fails_without_commit) ... ok\ntest_repeated_run_never_appends (test_fatal_and_replay.FailureAcceptance.test_repeated_run_never_appends) ... ok\ntest_truncated_gzip_never_commits (test_fatal_and_replay.FailureAcceptance.test_truncated_gzip_never_commits) ... ok\ntest_unterminated_quote_never_commits (test_fatal_and_replay.FailureAcceptance.test_unterminated_quote_never_commits) ... ok\ntest_zero_byte_and_invalid_batch_size_fatal (test_fatal_and_replay.FailureAcceptance.test_zero_byte_and_invalid_batch_size_fatal) ... ok\ntest_kernel_measurements_success_failure_and_timeout (test_integration_edges.BenchmarkHarnessTests.test_kernel_measurements_success_failure_and_timeout) ... ok\ntest_entrypoint_execution_rejects_unrecognized_runner_arguments (test_integration_edges.EntrypointTests.test_entrypoint_execution_rejects_unrecognized_runner_arguments) ... ok\ntest_gzip_generator_and_byte_budget (test_integration_edges.EntrypointTests.test_gzip_generator_and_byte_budget) ... ok\ntest_cli_and_source_entrypoint (test_integration_edges.IntegrationTests.test_cli_and_source_entrypoint) ... ok\ntest_header_rejection_stop_decode_and_gzip_failures (test_integration_edges.IntegrationTests.test_header_rejection_stop_decode_and_gzip_failures) ... ok\ntest_library_golden_real_marker_hashes_and_permissions (test_integration_edges.IntegrationTests.test_library_golden_real_marker_hashes_and_permissions) ... ok\ntest_synthetic_generator_independent_reference (test_integration_edges.IntegrationTests.test_synthetic_generator_independent_reference) ... ok\ntest_crc_corruption_and_wrong_headers_never_commit (test_integration_edges.ProvenanceAndIntegrityTests.test_crc_corruption_and_wrong_headers_never_commit) ... ok\ntest_exact_rejected_multiline_raw_record_and_location (test_integration_edges.ProvenanceAndIntegrityTests.test_exact_rejected_multiline_raw_record_and_location) ... ok\ntest_finite_reconciliation_model_correspondence (test_model_correspondence.ProtocolTests.test_finite_reconciliation_model_correspondence) ... ok\ntest_two_processes_same_target_and_sigterm_replay (test_model_correspondence.ProtocolTests.test_two_processes_same_target_and_sigterm_replay) ... ok\ntest_negative_control_detects_dropped_row_and_float_rounding (test_oracle_selfcheck.GoldenReferenceCalibration.test_negative_control_detects_dropped_row_and_float_rounding) ... ok\ntest_positive_control (test_oracle_selfcheck.GoldenReferenceCalibration.test_positive_control) ... ok\ntest_batch_row_order_and_gzip_metamorphic (test_properties.GeneratedChecks.test_batch_row_order_and_gzip_metamorphic) ... ok\ntest_byte_fuzz_is_bounded_and_does_not_resynchronize (test_properties.GeneratedChecks.test_byte_fuzz_is_bounded_and_does_not_resynchronize) ... ok\ntest_csv_differential (test_properties.GeneratedChecks.test_csv_differential) ... ok\ntest_feynman_resource_counterexamples (test_properties.GeneratedChecks.test_feynman_resource_counterexamples) ... ok\ntest_integer_ledger_against_decimal (test_properties.GeneratedChecks.test_integer_ledger_against_decimal) ... ok\nrunTest (hypothesis.stateful.LedgerProtocol.TestCase.runTest) ... ok\ntest_interruption_records_incomplete_attempt (test_writer_failure_seams.FailureTests.test_interruption_records_incomplete_attempt) ... ok\ntest_symlink_components_and_existing_target_refused (test_writer_failure_seams.FailureTests.test_symlink_components_and_existing_target_refused) ... ok\ntest_write_failure_never_publishes (test_writer_failure_seams.FailureTests.test_write_failure_never_publishes) ... ok\ntest_changed_input_and_failed_diagnostics_do_not_commit (test_writer_failure_seams.PublicationTests.test_changed_input_and_failed_diagnostics_do_not_commit) ... ok\ntest_failed_publication_revokes_marker (test_writer_failure_seams.PublicationTests.test_failed_publication_revokes_marker) ... ok\ntest_actual_unwritable_output_parent (test_writer_failure_seams.RealPermissionTests.test_actual_unwritable_output_parent) ... ok\n\n----------------------------------------------------------------------\nRan 41 tests in 3.108s\n\nOK\n",
+      "test_method": "unittest discover executed under coverage.py",
+      "test_returncode": 0,
+      "tests_run": 41
+    }
+  },
+  "installed_console_summary": {
+    "accepted_count": 3,
+    "accepted_totals_by_currency": {
+      "EUR": "8.00",
+      "USD": "0.30"
+    },
+    "complete": true,
+    "completed_at_utc": "2026-10-30T22:55:44.166633+00:00",
+    "duration_seconds": 0.0019279489999917132,
+    "examined_count": 5,
+    "format_version": 1,
+    "input_filename": "GOLDEN_MIXED.csv",
+    "input_inode": 14174,
+    "input_mtime_ns": 1793400933063036300,
+    "input_size_bytes": 471,
+    "policy_sha256": "71aeb22a94573e626193a7e3310ccefd4105b5e76ed188529dbf466e3a98ad87",
+    "rejected_count": 2,
+    "rejection_counts_by_type": {
+      "INVALID_AMOUNT": 1,
+      "UNSUPPORTED_CURRENCY": 1
+    },
+    "started_at_utc": "2026-10-30T22:55:44.164692+00:00",
+    "status": "PARTIAL",
+    "throughput_records_per_second": 2593.4295979932513
+  },
+  "lean_model": "PASS_ABSTRACT_MODEL_ONLY",
+  "packaged_manifest_unchanged_after_replay": true,
+  "remaining_acceptance_requirements": [
+    "Required 100 GB / >=150 GB physical-file tests on an 8 GB Linux host",
+    "Independent exact-artifact reviewer",
+    "Operator-approved production policy",
+    "Explicit human release decision"
+  ]
+}
