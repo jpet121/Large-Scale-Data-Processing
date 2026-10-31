@@ -1,0 +1,3722 @@
+{
+  "contract_sha256": "4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e",
+  "mode": "new",
+  "authority_review": "REVIEWED",
+  "proposition_trace": [
+    {
+      "id": "P21",
+      "disposition": "COVERED",
+      "rationale": "Binding PROHIBITED GLOBAL proposition P21 (avoid_solving_by_buying_ram) retained verbatim as R-P21; acceptance A01_STREAM_MEMORY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ]
+    },
+    {
+      "id": "P23",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P23 (overall_memory_goal) retained verbatim as R-P23; acceptance A01_STREAM_MEMORY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ]
+    },
+    {
+      "id": "P27",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P27 (production_readiness_and_streaming) retained verbatim as R-P27; acceptance A01_STREAM_MEMORY, A21_COMPONENT_SEPARATION tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A21_COMPONENT_SEPARATION"
+      ]
+    },
+    {
+      "id": "P31",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P31 (hundreds_of_millions_of_transactions) retained verbatim as R-P31; acceptance A01_STREAM_MEMORY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ]
+    },
+    {
+      "id": "P37",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P37 (maximum_supported_file_size_at_least) retained verbatim as R-P37; acceptance A01_STREAM_MEMORY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ]
+    },
+    {
+      "id": "P38",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P38 (incremental_reading) retained verbatim as R-P38; acceptance A01_STREAM_MEMORY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ]
+    },
+    {
+      "id": "P39",
+      "disposition": "COVERED",
+      "rationale": "Binding PROHIBITED GLOBAL proposition P39 (whole_file_materialization) retained verbatim as R-P39; acceptance A01_STREAM_MEMORY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ]
+    },
+    {
+      "id": "P41",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P41 (release_completed_batch_memory) retained verbatim as R-P41; acceptance A01_STREAM_MEMORY, A24_BATCH_CONFIG tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A24_BATCH_CONFIG"
+      ]
+    },
+    {
+      "id": "P42",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P42 (csv_and_streamed_gzip) retained verbatim as R-P42; acceptance A01_STREAM_MEMORY, A07_CORRUPT_GZIP_FATAL tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A07_CORRUPT_GZIP_FATAL"
+      ]
+    },
+    {
+      "id": "P43",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P43 (approximately_constant_memory_footprint) retained verbatim as R-P43; acceptance A01_STREAM_MEMORY, A14_RECORD_LIMITS, A24_BATCH_CONFIG tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A14_RECORD_LIMITS",
+        "A24_BATCH_CONFIG"
+      ]
+    },
+    {
+      "id": "P40",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P40 (default_target_batch_size) retained verbatim as R-P40; acceptance A01_STREAM_MEMORY, A24_BATCH_CONFIG tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A24_BATCH_CONFIG"
+      ]
+    },
+    {
+      "id": "P58",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P58 (explicit_transaction_schema) retained verbatim as R-P58; acceptance A02_SCHEMA_VALIDATION, A23_INCORRECT_HEADER tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A23_INCORRECT_HEADER"
+      ]
+    },
+    {
+      "id": "P60",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P60 (invalidity_detection) retained verbatim as R-P60; acceptance A02_SCHEMA_VALIDATION, A05_BAD_ROW_CONTINUE, A08_EMPTY_HEADER, A23_INCORRECT_HEADER tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A05_BAD_ROW_CONTINUE",
+        "A08_EMPTY_HEADER",
+        "A23_INCORRECT_HEADER"
+      ]
+    },
+    {
+      "id": "P62",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P62 (amount_arithmetic) retained verbatim as R-P62; acceptance A04_EXACT_DECIMAL tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A04_EXACT_DECIMAL"
+      ]
+    },
+    {
+      "id": "P64",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P64 (csv_dialect_parsing) retained verbatim as R-P64; acceptance A03_CSV_DIALECT tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A03_CSV_DIALECT"
+      ]
+    },
+    {
+      "id": "P66",
+      "disposition": "COVERED",
+      "rationale": "Binding PROHIBITED GLOBAL proposition P66 (silently_change_values_or_invent_fields) retained verbatim as R-P66; acceptance A02_SCHEMA_VALIDATION, A23_INCORRECT_HEADER, A25_VALUES_NO_NORMALIZATION tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A23_INCORRECT_HEADER",
+        "A25_VALUES_NO_NORMALIZATION"
+      ]
+    },
+    {
+      "id": "P74",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P74 (classify_record_vs_file_errors) retained verbatim as R-P74; acceptance A05_BAD_ROW_CONTINUE, A27_PARTIAL_STATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A27_PARTIAL_STATE"
+      ]
+    },
+    {
+      "id": "P76",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED B_RECORD_ERROR proposition P76 (continue_valid_records_and_reject_invalid) retained verbatim as R-P76; acceptance A02_SCHEMA_VALIDATION, A05_BAD_ROW_CONTINUE, A27_PARTIAL_STATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A05_BAD_ROW_CONTINUE",
+        "A27_PARTIAL_STATE"
+      ]
+    },
+    {
+      "id": "P78",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED B_RECORD_ERROR proposition P78 (record_and_source_location_and_reason) retained verbatim as R-P78; acceptance A02_SCHEMA_VALIDATION, A05_BAD_ROW_CONTINUE, A26_REJECTION_PROVENANCE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A05_BAD_ROW_CONTINUE",
+        "A26_REJECTION_PROVENANCE"
+      ]
+    },
+    {
+      "id": "P80",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED B_FATAL_ERROR proposition P80 (safe_failure_when_parsing_unreliable) retained verbatim as R-P80; acceptance A06_UNTRUSTED_CSV_FATAL, A07_CORRUPT_GZIP_FATAL, A09_WRITE_FAILURE, A27_PARTIAL_STATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A07_CORRUPT_GZIP_FATAL",
+        "A09_WRITE_FAILURE",
+        "A27_PARTIAL_STATE"
+      ]
+    },
+    {
+      "id": "P82",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED B_PARTIAL_RUN proposition P82 (interrupted_run_diagnostics) retained verbatim as R-P82; acceptance A09_WRITE_FAILURE, A10_INTERRUPTED_RUN, A27_PARTIAL_STATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A09_WRITE_FAILURE",
+        "A10_INTERRUPTED_RUN",
+        "A27_PARTIAL_STATE"
+      ]
+    },
+    {
+      "id": "P84",
+      "disposition": "COVERED",
+      "rationale": "Binding PROHIBITED B_PARTIAL_RUN proposition P84 (partial_output_must_not_appear_final) retained verbatim as R-P84; acceptance A09_WRITE_FAILURE, A10_INTERRUPTED_RUN, A16_ARTIFACT_COMMIT, A27_PARTIAL_STATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A09_WRITE_FAILURE",
+        "A10_INTERRUPTED_RUN",
+        "A16_ARTIFACT_COMMIT",
+        "A27_PARTIAL_STATE"
+      ]
+    },
+    {
+      "id": "P84_FATAL",
+      "disposition": "COVERED",
+      "rationale": "Binding PROHIBITED B_FATAL_ERROR proposition P84_FATAL (partial_output_must_not_appear_final_on_fatal_error) retained verbatim as R-P84_FATAL; acceptance A06_UNTRUSTED_CSV_FATAL, A07_CORRUPT_GZIP_FATAL, A16_ARTIFACT_COMMIT tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A07_CORRUPT_GZIP_FATAL",
+        "A16_ARTIFACT_COMMIT"
+      ]
+    },
+    {
+      "id": "P90",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P90 (validated_rows_written_incrementally) retained verbatim as R-P90; acceptance A16_ARTIFACT_COMMIT tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A16_ARTIFACT_COMMIT"
+      ]
+    },
+    {
+      "id": "P92",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P92 (invalid_rows_and_explanations) retained verbatim as R-P92; acceptance A05_BAD_ROW_CONTINUE, A16_ARTIFACT_COMMIT, A26_REJECTION_PROVENANCE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A16_ARTIFACT_COMMIT",
+        "A26_REJECTION_PROVENANCE"
+      ]
+    },
+    {
+      "id": "P96",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P96 (required_json_summary_field) retained verbatim as R-P96; acceptance A15_RECONCILE_SUMMARY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ]
+    },
+    {
+      "id": "P97",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P97 (required_json_summary_field) retained verbatim as R-P97; acceptance A15_RECONCILE_SUMMARY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ]
+    },
+    {
+      "id": "P98",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P98 (required_json_summary_field) retained verbatim as R-P98; acceptance A05_BAD_ROW_CONTINUE, A15_RECONCILE_SUMMARY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ]
+    },
+    {
+      "id": "P99",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P99 (required_json_summary_field) retained verbatim as R-P99; acceptance A05_BAD_ROW_CONTINUE, A15_RECONCILE_SUMMARY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ]
+    },
+    {
+      "id": "P100",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P100 (required_json_summary_field) retained verbatim as R-P100; acceptance A05_BAD_ROW_CONTINUE, A15_RECONCILE_SUMMARY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ]
+    },
+    {
+      "id": "P101",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P101 (required_json_summary_field) retained verbatim as R-P101; acceptance A05_BAD_ROW_CONTINUE, A15_RECONCILE_SUMMARY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ]
+    },
+    {
+      "id": "P102",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P102 (required_json_summary_field) retained verbatim as R-P102; acceptance A04_EXACT_DECIMAL, A15_RECONCILE_SUMMARY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A04_EXACT_DECIMAL",
+        "A15_RECONCILE_SUMMARY"
+      ]
+    },
+    {
+      "id": "P103",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P103 (required_json_summary_field) retained verbatim as R-P103; acceptance A15_RECONCILE_SUMMARY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ]
+    },
+    {
+      "id": "P104",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P104 (required_json_summary_field) retained verbatim as R-P104; acceptance A15_RECONCILE_SUMMARY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ]
+    },
+    {
+      "id": "P105",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P105 (required_json_summary_field) retained verbatim as R-P105; acceptance A15_RECONCILE_SUMMARY, A27_PARTIAL_STATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY",
+        "A27_PARTIAL_STATE"
+      ]
+    },
+    {
+      "id": "P107",
+      "disposition": "COVERED",
+      "rationale": "Binding PROHIBITED GLOBAL proposition P107 (no_accumulation_of_result_rows) retained verbatim as R-P107; acceptance A01_STREAM_MEMORY, A16_ARTIFACT_COMMIT tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A16_ARTIFACT_COMMIT"
+      ]
+    },
+    {
+      "id": "P113",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P113 (must_operate_on_existing_linux_servers) retained verbatim as R-P113; acceptance A01_STREAM_MEMORY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ]
+    },
+    {
+      "id": "P119",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P119 (memory_not_proportional_to_records) retained verbatim as R-P119; acceptance A01_STREAM_MEMORY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ]
+    },
+    {
+      "id": "P121",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P121 (reasonable_throughput_without_repeated_parses_or_disk_work) retained verbatim as R-P121; acceptance A01_STREAM_MEMORY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ]
+    },
+    {
+      "id": "P123",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P123 (progressive_benchmarks_and_documentation) retained verbatim as R-P123; acceptance A18_BENCHMARKS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ]
+    },
+    {
+      "id": "P127",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P127 (command_line_execution) retained verbatim as R-P127; acceptance A12_CLI_UNATTENDED tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED"
+      ]
+    },
+    {
+      "id": "P133",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P133 (configurable_paths_batches_record_limits_errors) retained verbatim as R-P133; acceptance A12_CLI_UNATTENDED, A14_RECORD_LIMITS, A24_BATCH_CONFIG tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED",
+        "A14_RECORD_LIMITS",
+        "A24_BATCH_CONFIG"
+      ]
+    },
+    {
+      "id": "P135",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P135 (usable_bounded_progress_without_row_dump) retained verbatim as R-P135; acceptance A12_CLI_UNATTENDED, A13_PROGRESS_PRIVACY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED",
+        "A13_PROGRESS_PRIVACY"
+      ]
+    },
+    {
+      "id": "P137",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P137 (unattended_operation_and_distinct_exit_outcomes) retained verbatim as R-P137; acceptance A12_CLI_UNATTENDED, A27_PARTIAL_STATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED",
+        "A27_PARTIAL_STATE"
+      ]
+    },
+    {
+      "id": "P139",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P139 (rerun_without_accidental_duplicate_appending) retained verbatim as R-P139; acceptance A10_INTERRUPTED_RUN, A11_RERUN_IDEMPOTENCE, A16_ARTIFACT_COMMIT tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A10_INTERRUPTED_RUN",
+        "A11_RERUN_IDEMPOTENCE",
+        "A16_ARTIFACT_COMMIT"
+      ]
+    },
+    {
+      "id": "P145",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P145 (preserve_amount_ids_timestamps) retained verbatim as R-P145; acceptance A02_SCHEMA_VALIDATION, A03_CSV_DIALECT, A04_EXACT_DECIMAL, A25_VALUES_NO_NORMALIZATION tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A03_CSV_DIALECT",
+        "A04_EXACT_DECIMAL",
+        "A25_VALUES_NO_NORMALIZATION"
+      ]
+    },
+    {
+      "id": "P147",
+      "disposition": "COVERED",
+      "rationale": "Binding PROHIBITED GLOBAL proposition P147 (silent_discard_truncation_or_row_combination) retained verbatim as R-P147; acceptance A02_SCHEMA_VALIDATION, A03_CSV_DIALECT, A06_UNTRUSTED_CSV_FATAL, A11_RERUN_IDEMPOTENCE, A14_RECORD_LIMITS, A25_VALUES_NO_NORMALIZATION, A26_REJECTION_PROVENANCE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A03_CSV_DIALECT",
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A11_RERUN_IDEMPOTENCE",
+        "A14_RECORD_LIMITS",
+        "A25_VALUES_NO_NORMALIZATION",
+        "A26_REJECTION_PROVENANCE"
+      ]
+    },
+    {
+      "id": "P149",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P149 (accepted_plus_rejected_equals_examined) retained verbatim as R-P149; acceptance A05_BAD_ROW_CONTINUE, A08_EMPTY_HEADER, A15_RECONCILE_SUMMARY, A25_VALUES_NO_NORMALIZATION tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A08_EMPTY_HEADER",
+        "A15_RECONCILE_SUMMARY",
+        "A25_VALUES_NO_NORMALIZATION"
+      ]
+    },
+    {
+      "id": "P151",
+      "disposition": "COVERED",
+      "rationale": "Binding PROHIBITED GLOBAL proposition P151 (unnecessary_sensitive_data_exposure) retained verbatim as R-P151; acceptance A13_PROGRESS_PRIVACY, A20_SECURITY_LOCAL tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A13_PROGRESS_PRIVACY",
+        "A20_SECURITY_LOCAL"
+      ]
+    },
+    {
+      "id": "P153",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P153 (internal_only_no_external_financial_upload) retained verbatim as R-P153; acceptance A13_PROGRESS_PRIVACY, A20_SECURITY_LOCAL tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A13_PROGRESS_PRIVACY",
+        "A20_SECURITY_LOCAL"
+      ]
+    },
+    {
+      "id": "P157",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P157 (demonstrable_realistic_conditions_before_acceptance) retained verbatim as R-P157; acceptance A18_BENCHMARKS, A22_ACCEPTANCE_GATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS",
+        "A22_ACCEPTANCE_GATE"
+      ]
+    },
+    {
+      "id": "P161",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P161 (test_case) retained verbatim as R-P161; acceptance A18_BENCHMARKS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ]
+    },
+    {
+      "id": "P162",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P162 (test_case) retained verbatim as R-P162; acceptance A18_BENCHMARKS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ]
+    },
+    {
+      "id": "P163",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P163 (test_case) retained verbatim as R-P163; acceptance A18_BENCHMARKS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ]
+    },
+    {
+      "id": "P164",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P164 (test_case) retained verbatim as R-P164; acceptance A05_BAD_ROW_CONTINUE, A06_UNTRUSTED_CSV_FATAL, A23_INCORRECT_HEADER tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A23_INCORRECT_HEADER"
+      ]
+    },
+    {
+      "id": "P165",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P165 (test_case) retained verbatim as R-P165; acceptance A03_CSV_DIALECT tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A03_CSV_DIALECT"
+      ]
+    },
+    {
+      "id": "P166",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P166 (test_case) retained verbatim as R-P166; acceptance A08_EMPTY_HEADER tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A08_EMPTY_HEADER"
+      ]
+    },
+    {
+      "id": "P167",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P167 (test_case) retained verbatim as R-P167; acceptance A07_CORRUPT_GZIP_FATAL tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A07_CORRUPT_GZIP_FATAL"
+      ]
+    },
+    {
+      "id": "P168",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P168 (test_case) retained verbatim as R-P168; acceptance A14_RECORD_LIMITS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A14_RECORD_LIMITS"
+      ]
+    },
+    {
+      "id": "P169",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P169 (test_case) retained verbatim as R-P169; acceptance A09_WRITE_FAILURE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A09_WRITE_FAILURE"
+      ]
+    },
+    {
+      "id": "P170",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P170 (test_case) retained verbatim as R-P170; acceptance A10_INTERRUPTED_RUN, A11_RERUN_IDEMPOTENCE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A10_INTERRUPTED_RUN",
+        "A11_RERUN_IDEMPOTENCE"
+      ]
+    },
+    {
+      "id": "P171",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P171 (test_case) retained verbatim as R-P171; acceptance A04_EXACT_DECIMAL tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A04_EXACT_DECIMAL"
+      ]
+    },
+    {
+      "id": "P173",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P173 (prove_no_unbounded_growth_in_long_runs) retained verbatim as R-P173; acceptance A01_STREAM_MEMORY, A18_BENCHMARKS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS"
+      ]
+    },
+    {
+      "id": "P175",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P175 (files_significantly_larger_than_ram_inside_agreed_budget) retained verbatim as R-P175; acceptance A01_STREAM_MEMORY, A18_BENCHMARKS, A22_ACCEPTANCE_GATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS",
+        "A22_ACCEPTANCE_GATE"
+      ]
+    },
+    {
+      "id": "P177",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P177 (automated_correctness_validation_error_integrity_recovery) retained verbatim as R-P177; acceptance A02_SCHEMA_VALIDATION, A09_WRITE_FAILURE, A22_ACCEPTANCE_GATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A09_WRITE_FAILURE",
+        "A22_ACCEPTANCE_GATE"
+      ]
+    },
+    {
+      "id": "P183",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P183 (python_version) retained verbatim as R-P183; acceptance A19_DOCS_OPERATIONS, A21_COMPONENT_SEPARATION tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS",
+        "A21_COMPONENT_SEPARATION"
+      ]
+    },
+    {
+      "id": "P184",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P184 (code_separation) retained verbatim as R-P184; acceptance A19_DOCS_OPERATIONS, A21_COMPONENT_SEPARATION tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS",
+        "A21_COMPONENT_SEPARATION"
+      ]
+    },
+    {
+      "id": "P185",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P185 (required_delivery_component) retained verbatim as R-P185; acceptance A12_CLI_UNATTENDED tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED"
+      ]
+    },
+    {
+      "id": "P186",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P186 (required_delivery_component) retained verbatim as R-P186; acceptance A21_COMPONENT_SEPARATION tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A21_COMPONENT_SEPARATION"
+      ]
+    },
+    {
+      "id": "P187",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P187 (required_delivery_component) retained verbatim as R-P187; acceptance A17_SYNTHETIC_GENERATOR tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A17_SYNTHETIC_GENERATOR"
+      ]
+    },
+    {
+      "id": "P188",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P188 (required_delivery_component) retained verbatim as R-P188; acceptance A18_BENCHMARKS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ]
+    },
+    {
+      "id": "P189",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P189 (required_delivery_component) retained verbatim as R-P189; acceptance A19_DOCS_OPERATIONS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS"
+      ]
+    },
+    {
+      "id": "P190",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P190 (required_delivery_component) retained verbatim as R-P190; acceptance A19_DOCS_OPERATIONS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS"
+      ]
+    },
+    {
+      "id": "P194",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P194 (acceptance_input_file_size) retained verbatim as R-P194; acceptance A01_STREAM_MEMORY, A18_BENCHMARKS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS"
+      ]
+    },
+    {
+      "id": "P194_ENV",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P194_ENV (success_test_host) retained verbatim as R-P194_ENV; acceptance A01_STREAM_MEMORY, A18_BENCHMARKS tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS"
+      ]
+    },
+    {
+      "id": "P196",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P196 (acceptance_bounded_memory_accuracy_malformed_reconciliation) retained verbatim as R-P196; acceptance A01_STREAM_MEMORY, A22_ACCEPTANCE_GATE tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A22_ACCEPTANCE_GATE"
+      ]
+    },
+    {
+      "id": "P198",
+      "disposition": "COVERED",
+      "rationale": "Binding REQUIRED GLOBAL proposition P198 (scale_affects_time_not_unbounded_memory) retained verbatim as R-P198; acceptance A01_STREAM_MEMORY tests behavior, violation, or measured evidence without promoting a design preference to owner policy.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R-P21",
+      "source_proposition_ids": [
+        "P21"
+      ],
+      "statement": "MUST NOT Purchasing servers with significantly more RAM is not an acceptable long-term solution.",
+      "expected_observation": "No observed violation of prohibition P21 (avoid_solving_by_buying_ram); counterexample cases A01_STREAM_MEMORY detect violation, and production artifacts never misrepresent an incomplete or altered transaction.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 1311,
+          "event_id": "S1",
+          "excerpt_sha256": "48afc9cf0d425d1ed7660dd655dd3c4ae75533e071a15567a1b5ce545173d6c2",
+          "source_id": "S1",
+          "start": 1224
+        }
+      ]
+    },
+    {
+      "id": "R-P23",
+      "source_proposition_ids": [
+        "P23"
+      ],
+      "statement": "MUST We need a Python application that can reliably process massive CSV transaction files using a small, predictable amount of memory, regardless of the total file size.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY demonstrates the exact source clause P23 (overall_memory_goal) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 1481,
+          "event_id": "S1",
+          "excerpt_sha256": "047184061d0675515fa9eac10140252a18e093ec2c93efbe7f0f699e4a16d09a",
+          "source_id": "S1",
+          "start": 1313
+        }
+      ]
+    },
+    {
+      "id": "R-P27",
+      "source_proposition_ids": [
+        "P27"
+      ],
+      "statement": "MUST We want a production-ready Streaming CSV Transaction Parser that reads large transaction files incrementally rather than loading them entirely into RAM.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY, A21_COMPONENT_SEPARATION demonstrates the exact source clause P27 (production_readiness_and_streaming) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A21_COMPONENT_SEPARATION"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 1658,
+          "event_id": "S1",
+          "excerpt_sha256": "90a933c0b41ac27fc014faf2985ce088e1e767e6cd688c0243d5fc878ec43be5",
+          "source_id": "S1",
+          "start": 1506
+        }
+      ]
+    },
+    {
+      "id": "R-P31",
+      "source_proposition_ids": [
+        "P31"
+      ],
+      "statement": "MUST Our goal is to process files containing millions or hundreds of millions of transactions without exhausting system memory.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY demonstrates the exact source clause P31 (hundreds_of_millions_of_transactions) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 1936,
+          "event_id": "S1",
+          "excerpt_sha256": "c2d4b1b4a17f2e90a36c2deb2092c9141964bb138cf63f4463156f640e0393a5",
+          "source_id": "S1",
+          "start": 1814
+        }
+      ]
+    },
+    {
+      "id": "R-P37",
+      "source_proposition_ids": [
+        "P37"
+      ],
+      "statement": "MUST maximum_supported_file_size_at_least: 150 GB file",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY demonstrates the exact source clause P37 (maximum_supported_file_size_at_least) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 2059,
+          "event_id": "S1",
+          "excerpt_sha256": "e284fdd63e8a788b4f17be75fe996c72bcd108aa8f695552f52c285a896cf703",
+          "source_id": "S1",
+          "start": 1991
+        }
+      ]
+    },
+    {
+      "id": "R-P38",
+      "source_proposition_ids": [
+        "P38"
+      ],
+      "statement": "MUST Read transactions incrementally using streaming techniques.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY demonstrates the exact source clause P38 (incremental_reading) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 2121,
+          "event_id": "S1",
+          "excerpt_sha256": "0eea12e476d64cacf9441e737b5f1c4cf799453e4bf18c2cfd3da5c9040d63a5",
+          "source_id": "S1",
+          "start": 2060
+        }
+      ]
+    },
+    {
+      "id": "R-P39",
+      "source_proposition_ids": [
+        "P39"
+      ],
+      "statement": "MUST NOT Never load an entire file into memory.",
+      "expected_observation": "No observed violation of prohibition P39 (whole_file_materialization); counterexample cases A01_STREAM_MEMORY detect violation, and production artifacts never misrepresent an incomplete or altered transaction.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 2162,
+          "event_id": "S1",
+          "excerpt_sha256": "d68cd8b70a3656e09e7f42307daf080b52b32fd18af6ba66d473ff7a83c195d8",
+          "source_id": "S1",
+          "start": 2122
+        }
+      ]
+    },
+    {
+      "id": "R-P41",
+      "source_proposition_ids": [
+        "P41"
+      ],
+      "statement": "MUST Release memory associated with completed batches.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY, A24_BATCH_CONFIG demonstrates the exact source clause P41 (release_completed_batch_memory) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A24_BATCH_CONFIG"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 2308,
+          "event_id": "S1",
+          "excerpt_sha256": "4bf97f485719e476d1a6bb92a9587cd9c75b0cd9093078d5602544d7e8c7c462",
+          "source_id": "S1",
+          "start": 2257
+        }
+      ]
+    },
+    {
+      "id": "R-P42",
+      "source_proposition_ids": [
+        "P42"
+      ],
+      "statement": "MUST Support standard CSV files and gzip-compressed CSV files without first decompressing the entire archive to disk.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY, A07_CORRUPT_GZIP_FATAL demonstrates the exact source clause P42 (csv_and_streamed_gzip) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A07_CORRUPT_GZIP_FATAL"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 2423,
+          "event_id": "S1",
+          "excerpt_sha256": "cc979235a0f366547a284ca25350a7145adbef82c1be41fe8aa5f2ff00087a83",
+          "source_id": "S1",
+          "start": 2309
+        }
+      ]
+    },
+    {
+      "id": "R-P43",
+      "source_proposition_ids": [
+        "P43"
+      ],
+      "statement": "MUST Maintain approximately constant memory usage as file size increases, subject to configured batch size and record-size limits.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY, A14_RECORD_LIMITS, A24_BATCH_CONFIG demonstrates the exact source clause P43 (approximately_constant_memory_footprint) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A14_RECORD_LIMITS",
+        "A24_BATCH_CONFIG"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 2551,
+          "event_id": "S1",
+          "excerpt_sha256": "d76ffbee6e55b0c06a58c2b947b92c986d1ff291b4da216ee424255f11cc7e4b",
+          "source_id": "S1",
+          "start": 2424
+        }
+      ]
+    },
+    {
+      "id": "R-P40",
+      "source_proposition_ids": [
+        "P40"
+      ],
+      "statement": "MUST default_target_batch_size: 10000 records/batch",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY, A24_BATCH_CONFIG demonstrates the exact source clause P40 (default_target_batch_size) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A24_BATCH_CONFIG"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 2256,
+          "event_id": "S1",
+          "excerpt_sha256": "696177aaf68fc804db3bd8e7a1af7c564f9c1d1eb54735c90a97ecaa3dd9ab2d",
+          "source_id": "S1",
+          "start": 2163
+        }
+      ]
+    },
+    {
+      "id": "R-P58",
+      "source_proposition_ids": [
+        "P58"
+      ],
+      "statement": "MUST The parser must validate incoming records against a clearly defined transaction schema.",
+      "expected_observation": "Evidence from A02_SCHEMA_VALIDATION, A23_INCORRECT_HEADER demonstrates the exact source clause P58 (explicit_transaction_schema) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A23_INCORRECT_HEADER"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 2889,
+          "event_id": "S1",
+          "excerpt_sha256": "50378da05b5bc4bf9fbabeab7e547d76874c0a1668255d6be568a4e76f6f5e50",
+          "source_id": "S1",
+          "start": 2802
+        }
+      ]
+    },
+    {
+      "id": "R-P60",
+      "source_proposition_ids": [
+        "P60"
+      ],
+      "statement": "MUST It must detect missing required fields, malformed timestamps, invalid monetary amounts, unsupported currencies, incorrect column structures, and incomplete records.",
+      "expected_observation": "Evidence from A02_SCHEMA_VALIDATION, A05_BAD_ROW_CONTINUE, A08_EMPTY_HEADER, A23_INCORRECT_HEADER demonstrates the exact source clause P60 (invalidity_detection) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A05_BAD_ROW_CONTINUE",
+        "A08_EMPTY_HEADER",
+        "A23_INCORRECT_HEADER"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 3055,
+          "event_id": "S1",
+          "excerpt_sha256": "5b8c0e1004f0bb14942ad16efe2ed87e8df99894834b1718577cc6cf3686af33",
+          "source_id": "S1",
+          "start": 2891
+        }
+      ]
+    },
+    {
+      "id": "R-P62",
+      "source_proposition_ids": [
+        "P62"
+      ],
+      "statement": "MUST Financial amounts must be handled with exact decimal arithmetic rather than floating-point approximations.",
+      "expected_observation": "Evidence from A04_EXACT_DECIMAL demonstrates the exact source clause P62 (amount_arithmetic) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A04_EXACT_DECIMAL"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 3163,
+          "event_id": "S1",
+          "excerpt_sha256": "e44ccf30fa1cfc6e460feb9e70189f7f22981aafa3d5dd9eae95ad88083b930f",
+          "source_id": "S1",
+          "start": 3057
+        }
+      ]
+    },
+    {
+      "id": "R-P64",
+      "source_proposition_ids": [
+        "P64"
+      ],
+      "statement": "MUST The application must correctly handle standard CSV quoting and escaping rules, including quoted commas and embedded line breaks.",
+      "expected_observation": "Evidence from A03_CSV_DIALECT demonstrates the exact source clause P64 (csv_dialect_parsing) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A03_CSV_DIALECT"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 3293,
+          "event_id": "S1",
+          "excerpt_sha256": "92bc9a2583dc9272f6655fc89e375b2633c763099feb2b47ed916b8799653ef1",
+          "source_id": "S1",
+          "start": 3165
+        }
+      ]
+    },
+    {
+      "id": "R-P66",
+      "source_proposition_ids": [
+        "P66"
+      ],
+      "statement": "MUST NOT We cannot accept a system that silently changes transaction values or invents missing information.",
+      "expected_observation": "No observed violation of prohibition P66 (silently_change_values_or_invent_fields); counterexample cases A02_SCHEMA_VALIDATION, A23_INCORRECT_HEADER, A25_VALUES_NO_NORMALIZATION detect violation, and production artifacts never misrepresent an incomplete or altered transaction.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A23_INCORRECT_HEADER",
+        "A25_VALUES_NO_NORMALIZATION"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 3393,
+          "event_id": "S1",
+          "excerpt_sha256": "33e9bd8ae79c583c2d051ed3e52a0cd648520e23d68b97da85719573f78387e0",
+          "source_id": "S1",
+          "start": 3295
+        }
+      ]
+    },
+    {
+      "id": "R-P74",
+      "source_proposition_ids": [
+        "P74"
+      ],
+      "statement": "MUST We need the application to distinguish between individual invalid transactions and serious file-level errors.",
+      "expected_observation": "Evidence from A05_BAD_ROW_CONTINUE, A27_PARTIAL_STATE demonstrates the exact source clause P74 (classify_record_vs_file_errors) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A27_PARTIAL_STATE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 3662,
+          "event_id": "S1",
+          "excerpt_sha256": "35a3b3df27925e4abc68601eaf3b3f5ed6ae164861488660b6ca42d8c8627406",
+          "source_id": "S1",
+          "start": 3553
+        }
+      ]
+    },
+    {
+      "id": "R-P76",
+      "source_proposition_ids": [
+        "P76"
+      ],
+      "statement": "MUST For individual record errors, the parser should continue processing valid records while recording rejected transactions in a separate output file.",
+      "expected_observation": "Evidence from A02_SCHEMA_VALIDATION, A05_BAD_ROW_CONTINUE, A27_PARTIAL_STATE demonstrates the exact source clause P76 (continue_valid_records_and_reject_invalid) under its specified scope B_RECORD_ERROR.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A05_BAD_ROW_CONTINUE",
+        "A27_PARTIAL_STATE"
+      ],
+      "source_scope": "B_RECORD_ERROR",
+      "original_source_anchors": [
+        {
+          "end": 3810,
+          "event_id": "S1",
+          "excerpt_sha256": "87beecfcbf14880d09f0bfc0a3d9ac96bbcd563aec9a132f6f002c4e02f02bde",
+          "source_id": "S1",
+          "start": 3664
+        }
+      ]
+    },
+    {
+      "id": "R-P78",
+      "source_proposition_ids": [
+        "P78"
+      ],
+      "statement": "MUST Each rejection should include the original record where recoverable, its source location or record number, and a clear explanation of why it failed.",
+      "expected_observation": "Evidence from A02_SCHEMA_VALIDATION, A05_BAD_ROW_CONTINUE, A26_REJECTION_PROVENANCE demonstrates the exact source clause P78 (record_and_source_location_and_reason) under its specified scope B_RECORD_ERROR.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A05_BAD_ROW_CONTINUE",
+        "A26_REJECTION_PROVENANCE"
+      ],
+      "source_scope": "B_RECORD_ERROR",
+      "original_source_anchors": [
+        {
+          "end": 3960,
+          "event_id": "S1",
+          "excerpt_sha256": "aaa2410773351733cd9b35eab2d762885ffabb70ffc5a12f7501e0a02dab5468",
+          "source_id": "S1",
+          "start": 3812
+        }
+      ]
+    },
+    {
+      "id": "R-P80",
+      "source_proposition_ids": [
+        "P80"
+      ],
+      "statement": "MUST For errors that make reliable parsing impossible, the application should stop safely, report the failure, and avoid presenting incomplete results as successful.",
+      "expected_observation": "Evidence from A06_UNTRUSTED_CSV_FATAL, A07_CORRUPT_GZIP_FATAL, A09_WRITE_FAILURE, A27_PARTIAL_STATE demonstrates the exact source clause P80 (safe_failure_when_parsing_unreliable) under its specified scope B_FATAL_ERROR.",
+      "acceptance_ids": [
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A07_CORRUPT_GZIP_FATAL",
+        "A09_WRITE_FAILURE",
+        "A27_PARTIAL_STATE"
+      ],
+      "source_scope": "B_FATAL_ERROR",
+      "original_source_anchors": [
+        {
+          "end": 4122,
+          "event_id": "S1",
+          "excerpt_sha256": "66227c9b3921ce277306ed909f47c266eccb90638ae354360eae1f08c3cea5fb",
+          "source_id": "S1",
+          "start": 3962
+        }
+      ]
+    },
+    {
+      "id": "R-P82",
+      "source_proposition_ids": [
+        "P82"
+      ],
+      "statement": "MUST If a processing run fails halfway through, we need to know which file was affected, how many records were processed, and whether the output is complete.",
+      "expected_observation": "Evidence from A09_WRITE_FAILURE, A10_INTERRUPTED_RUN, A27_PARTIAL_STATE demonstrates the exact source clause P82 (interrupted_run_diagnostics) under its specified scope B_PARTIAL_RUN.",
+      "acceptance_ids": [
+        "A09_WRITE_FAILURE",
+        "A10_INTERRUPTED_RUN",
+        "A27_PARTIAL_STATE"
+      ],
+      "source_scope": "B_PARTIAL_RUN",
+      "original_source_anchors": [
+        {
+          "end": 4276,
+          "event_id": "S1",
+          "excerpt_sha256": "fd3dd6f333e5e78d1bfffb2ab614dc9410f4fe9f2217c799070e448850bfb9fa",
+          "source_id": "S1",
+          "start": 4124
+        }
+      ]
+    },
+    {
+      "id": "R-P84",
+      "source_proposition_ids": [
+        "P84"
+      ],
+      "statement": "MUST NOT A failed run must never leave partial output that could be mistaken for an approved, completed transaction file.",
+      "expected_observation": "No observed violation of prohibition P84 (partial_output_must_not_appear_final); counterexample cases A09_WRITE_FAILURE, A10_INTERRUPTED_RUN, A16_ARTIFACT_COMMIT, A27_PARTIAL_STATE detect violation, and production artifacts never misrepresent an incomplete or altered transaction.",
+      "acceptance_ids": [
+        "A09_WRITE_FAILURE",
+        "A10_INTERRUPTED_RUN",
+        "A16_ARTIFACT_COMMIT",
+        "A27_PARTIAL_STATE"
+      ],
+      "source_scope": "B_PARTIAL_RUN",
+      "original_source_anchors": [
+        {
+          "end": 4390,
+          "event_id": "S1",
+          "excerpt_sha256": "dcfa841c408c29783d4d5346338f7dc65c1fa9bb1859865e1100765c9766d1c3",
+          "source_id": "S1",
+          "start": 4278
+        }
+      ]
+    },
+    {
+      "id": "R-P84_FATAL",
+      "source_proposition_ids": [
+        "P84_FATAL"
+      ],
+      "statement": "MUST NOT A failed run must never leave partial output that could be mistaken for an approved, completed transaction file.",
+      "expected_observation": "No observed violation of prohibition P84_FATAL (partial_output_must_not_appear_final_on_fatal_error); counterexample cases A06_UNTRUSTED_CSV_FATAL, A07_CORRUPT_GZIP_FATAL, A16_ARTIFACT_COMMIT detect violation, and production artifacts never misrepresent an incomplete or altered transaction.",
+      "acceptance_ids": [
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A07_CORRUPT_GZIP_FATAL",
+        "A16_ARTIFACT_COMMIT"
+      ],
+      "source_scope": "B_FATAL_ERROR",
+      "original_source_anchors": [
+        {
+          "end": 4390,
+          "event_id": "S1",
+          "excerpt_sha256": "dcfa841c408c29783d4d5346338f7dc65c1fa9bb1859865e1100765c9766d1c3",
+          "source_id": "S1",
+          "start": 4278
+        }
+      ]
+    },
+    {
+      "id": "R-P90",
+      "source_proposition_ids": [
+        "P90"
+      ],
+      "statement": "MUST Validated Transactions:** A clean CSV file containing successfully parsed and validated records, written incrementally.",
+      "expected_observation": "Evidence from A16_ARTIFACT_COMMIT demonstrates the exact source clause P90 (validated_rows_written_incrementally) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A16_ARTIFACT_COMMIT"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 4593,
+          "event_id": "S1",
+          "excerpt_sha256": "948ca1735bff7da817fba0a8d7f670443158149ac21480376637164c6f6f653f",
+          "source_id": "S1",
+          "start": 4472
+        }
+      ]
+    },
+    {
+      "id": "R-P92",
+      "source_proposition_ids": [
+        "P92"
+      ],
+      "statement": "MUST Rejected Transactions:** A separate CSV file containing invalid records and their rejection reasons.",
+      "expected_observation": "Evidence from A05_BAD_ROW_CONTINUE, A16_ARTIFACT_COMMIT, A26_REJECTION_PROVENANCE demonstrates the exact source clause P92 (invalid_rows_and_explanations) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A16_ARTIFACT_COMMIT",
+        "A26_REJECTION_PROVENANCE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 4697,
+          "event_id": "S1",
+          "excerpt_sha256": "34655a42cd791b8de7927c5ae65954807e1f931a0087f55869e16b0124412b90",
+          "source_id": "S1",
+          "start": 4595
+        }
+      ]
+    },
+    {
+      "id": "R-P96",
+      "source_proposition_ids": [
+        "P96"
+      ],
+      "statement": "MUST Input filename and file size",
+      "expected_observation": "Evidence from A15_RECONCILE_SUMMARY demonstrates the exact source clause P96 (required_json_summary_field) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 4797,
+          "event_id": "S1",
+          "excerpt_sha256": "41f5ad1ced244020056d6327c2f644e707e53dc0f64ddcdabfc8e76c0a1ad5e6",
+          "source_id": "S1",
+          "start": 4767
+        }
+      ]
+    },
+    {
+      "id": "R-P97",
+      "source_proposition_ids": [
+        "P97"
+      ],
+      "statement": "MUST Processing start and completion timestamps",
+      "expected_observation": "Evidence from A15_RECONCILE_SUMMARY demonstrates the exact source clause P97 (required_json_summary_field) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 4842,
+          "event_id": "S1",
+          "excerpt_sha256": "355e57d5ad81bd39e34118fae732c64a0994b90a6745ab28c5ad093a7100f692",
+          "source_id": "S1",
+          "start": 4798
+        }
+      ]
+    },
+    {
+      "id": "R-P98",
+      "source_proposition_ids": [
+        "P98"
+      ],
+      "statement": "MUST Total records examined",
+      "expected_observation": "Evidence from A05_BAD_ROW_CONTINUE, A15_RECONCILE_SUMMARY demonstrates the exact source clause P98 (required_json_summary_field) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 4867,
+          "event_id": "S1",
+          "excerpt_sha256": "9545dbb3adf0f4e35db99f8fb269094be8dd450e93d2c8f8eb80d0e8c08935bd",
+          "source_id": "S1",
+          "start": 4843
+        }
+      ]
+    },
+    {
+      "id": "R-P99",
+      "source_proposition_ids": [
+        "P99"
+      ],
+      "statement": "MUST Number of accepted transactions",
+      "expected_observation": "Evidence from A05_BAD_ROW_CONTINUE, A15_RECONCILE_SUMMARY demonstrates the exact source clause P99 (required_json_summary_field) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 4901,
+          "event_id": "S1",
+          "excerpt_sha256": "257a72075d472782b2014479c3e02d4b47db2a573ba9b815c78f188a940b2971",
+          "source_id": "S1",
+          "start": 4868
+        }
+      ]
+    },
+    {
+      "id": "R-P100",
+      "source_proposition_ids": [
+        "P100"
+      ],
+      "statement": "MUST Number of rejected transactions",
+      "expected_observation": "Evidence from A05_BAD_ROW_CONTINUE, A15_RECONCILE_SUMMARY demonstrates the exact source clause P100 (required_json_summary_field) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 4935,
+          "event_id": "S1",
+          "excerpt_sha256": "18e4053c0603015f43ff5c09a90ab0faa6f8c0b7e0a5fefe3b9c9066f4b8e0dc",
+          "source_id": "S1",
+          "start": 4902
+        }
+      ]
+    },
+    {
+      "id": "R-P101",
+      "source_proposition_ids": [
+        "P101"
+      ],
+      "statement": "MUST Rejection counts by error type",
+      "expected_observation": "Evidence from A05_BAD_ROW_CONTINUE, A15_RECONCILE_SUMMARY demonstrates the exact source clause P101 (required_json_summary_field) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 4968,
+          "event_id": "S1",
+          "excerpt_sha256": "d2816fc2e8872a061136c5cd94d8c5f8f6cce4d273cf4a227ae17710f84dfec2",
+          "source_id": "S1",
+          "start": 4936
+        }
+      ]
+    },
+    {
+      "id": "R-P102",
+      "source_proposition_ids": [
+        "P102"
+      ],
+      "statement": "MUST Total monetary amount by currency for accepted transactions",
+      "expected_observation": "Evidence from A04_EXACT_DECIMAL, A15_RECONCILE_SUMMARY demonstrates the exact source clause P102 (required_json_summary_field) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A04_EXACT_DECIMAL",
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 5030,
+          "event_id": "S1",
+          "excerpt_sha256": "ef13d2f1a10f64b642cc93298a345ecfb489e1f748e14cc168f0e960a8e64600",
+          "source_id": "S1",
+          "start": 4969
+        }
+      ]
+    },
+    {
+      "id": "R-P103",
+      "source_proposition_ids": [
+        "P103"
+      ],
+      "statement": "MUST Total processing duration",
+      "expected_observation": "Evidence from A15_RECONCILE_SUMMARY demonstrates the exact source clause P103 (required_json_summary_field) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 5058,
+          "event_id": "S1",
+          "excerpt_sha256": "c4f8b97399d111256c7385d4cea775dcfce9beaa0484915200db873546274d4e",
+          "source_id": "S1",
+          "start": 5031
+        }
+      ]
+    },
+    {
+      "id": "R-P104",
+      "source_proposition_ids": [
+        "P104"
+      ],
+      "statement": "MUST Average processing throughput",
+      "expected_observation": "Evidence from A15_RECONCILE_SUMMARY demonstrates the exact source clause P104 (required_json_summary_field) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 5090,
+          "event_id": "S1",
+          "excerpt_sha256": "3713369335a21abac202b2aa504a5523102681748268bb1a739cdf7294edf326",
+          "source_id": "S1",
+          "start": 5059
+        }
+      ]
+    },
+    {
+      "id": "R-P105",
+      "source_proposition_ids": [
+        "P105"
+      ],
+      "statement": "MUST Final processing status",
+      "expected_observation": "Evidence from A15_RECONCILE_SUMMARY, A27_PARTIAL_STATE demonstrates the exact source clause P105 (required_json_summary_field) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY",
+        "A27_PARTIAL_STATE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 5116,
+          "event_id": "S1",
+          "excerpt_sha256": "7b3b1d7d60a33bdc2172b3cf623391835eed7296042d7529f50c90460221102c",
+          "source_id": "S1",
+          "start": 5091
+        }
+      ]
+    },
+    {
+      "id": "R-P107",
+      "source_proposition_ids": [
+        "P107"
+      ],
+      "statement": "MUST NOT The application must not accumulate all validated or rejected records in memory before writing them.",
+      "expected_observation": "No observed violation of prohibition P107 (no_accumulation_of_result_rows); counterexample cases A01_STREAM_MEMORY, A16_ARTIFACT_COMMIT detect violation, and production artifacts never misrepresent an incomplete or altered transaction.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A16_ARTIFACT_COMMIT"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 5218,
+          "event_id": "S1",
+          "excerpt_sha256": "00d6abe645e9faa9da274f12174986bd8475bc7d8c4ee65f812b4165b38ad423",
+          "source_id": "S1",
+          "start": 5118
+        }
+      ]
+    },
+    {
+      "id": "R-P113",
+      "source_proposition_ids": [
+        "P113"
+      ],
+      "statement": "MUST The new application must operate within these constraints.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY demonstrates the exact source clause P113 (must_operate_on_existing_linux_servers) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 5406,
+          "event_id": "S1",
+          "excerpt_sha256": "27c4838ce2dc4b38d8cfb4dc417db478002bd7812aafeb98cabb02d148012c77",
+          "source_id": "S1",
+          "start": 5348
+        }
+      ]
+    },
+    {
+      "id": "R-P119",
+      "source_proposition_ids": [
+        "P119"
+      ],
+      "statement": "MUST Memory consumption should not grow proportionally with the number of records processed.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY demonstrates the exact source clause P119 (memory_not_proportional_to_records) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 5758,
+          "event_id": "S1",
+          "excerpt_sha256": "c57925d11da3270d0f5b5d571f8f3f77af3690d34fe1f0a7042f1e57f6a1cec6",
+          "source_id": "S1",
+          "start": 5671
+        }
+      ]
+    },
+    {
+      "id": "R-P121",
+      "source_proposition_ids": [
+        "P121"
+      ],
+      "statement": "MUST We also need reasonable throughput. The application should avoid unnecessary repeated parsing, excessive disk operations, and storing large intermediate datasets.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY demonstrates the exact source clause P121 (reasonable_throughput_without_repeated_parses_or_disk_work) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 5922,
+          "event_id": "S1",
+          "excerpt_sha256": "aa3bcc3aec278ff9009f7adf6574c014f6f8fa19813f9fc8e9b2f7f7e33a2665",
+          "source_id": "S1",
+          "start": 5760
+        }
+      ]
+    },
+    {
+      "id": "R-P123",
+      "source_proposition_ids": [
+        "P123"
+      ],
+      "statement": "MUST We expect the development team to benchmark the parser using progressively larger files and document actual throughput, memory consumption, and performance limitations.",
+      "expected_observation": "Evidence from A18_BENCHMARKS demonstrates the exact source clause P123 (progressive_benchmarks_and_documentation) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 6092,
+          "event_id": "S1",
+          "excerpt_sha256": "3d12bf48b850956108704410c8c80b29dc86b4097469bc4c8d58bb744e1623bf",
+          "source_id": "S1",
+          "start": 5924
+        }
+      ]
+    },
+    {
+      "id": "R-P127",
+      "source_proposition_ids": [
+        "P127"
+      ],
+      "statement": "MUST Our operations team should be able to run the application from the command line.",
+      "expected_observation": "Evidence from A12_CLI_UNATTENDED demonstrates the exact source clause P127 (command_line_execution) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 6210,
+          "event_id": "S1",
+          "excerpt_sha256": "2361700dc0f4fa664a7d172cf3628dbb921dba9afa89b28e86bcc8b23dfa815d",
+          "source_id": "S1",
+          "start": 6130
+        }
+      ]
+    },
+    {
+      "id": "R-P133",
+      "source_proposition_ids": [
+        "P133"
+      ],
+      "statement": "MUST We need configurable input paths, output locations, batch sizes, record-size limits, and error-handling settings.",
+      "expected_observation": "Evidence from A12_CLI_UNATTENDED, A14_RECORD_LIMITS, A24_BATCH_CONFIG demonstrates the exact source clause P133 (configurable_paths_batches_record_limits_errors) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED",
+        "A14_RECORD_LIMITS",
+        "A24_BATCH_CONFIG"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 6420,
+          "event_id": "S1",
+          "excerpt_sha256": "21e25a6cd0013d11e042d8df9b4b10dbefbdb650a65ec0f99633cb775debc58d",
+          "source_id": "S1",
+          "start": 6307
+        }
+      ]
+    },
+    {
+      "id": "R-P135",
+      "source_proposition_ids": [
+        "P135"
+      ],
+      "statement": "MUST The system should provide useful progress information during execution without printing millions of transaction records to the console.",
+      "expected_observation": "Evidence from A12_CLI_UNATTENDED, A13_PROGRESS_PRIVACY demonstrates the exact source clause P135 (usable_bounded_progress_without_row_dump) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED",
+        "A13_PROGRESS_PRIVACY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 6557,
+          "event_id": "S1",
+          "excerpt_sha256": "e83d28b173c5c978562f70644dcae785fb697c4e90852a741ef4279689022b30",
+          "source_id": "S1",
+          "start": 6422
+        }
+      ]
+    },
+    {
+      "id": "R-P137",
+      "source_proposition_ids": [
+        "P137"
+      ],
+      "statement": "MUST It should run unattended through our existing scheduled batch jobs and return meaningful exit codes so our monitoring system can distinguish successful, partially processed, and failed runs.",
+      "expected_observation": "Evidence from A12_CLI_UNATTENDED, A27_PARTIAL_STATE demonstrates the exact source clause P137 (unattended_operation_and_distinct_exit_outcomes) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED",
+        "A27_PARTIAL_STATE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 6749,
+          "event_id": "S1",
+          "excerpt_sha256": "3968788867904f1f2eb21197a686c7a184e0a4b6359a26ea8cea3e11a688b623",
+          "source_id": "S1",
+          "start": 6559
+        }
+      ]
+    },
+    {
+      "id": "R-P139",
+      "source_proposition_ids": [
+        "P139"
+      ],
+      "statement": "MUST Repeated processing of the same input should not unintentionally append duplicate results to previously completed output files.",
+      "expected_observation": "Evidence from A10_INTERRUPTED_RUN, A11_RERUN_IDEMPOTENCE, A16_ARTIFACT_COMMIT demonstrates the exact source clause P139 (rerun_without_accidental_duplicate_appending) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A10_INTERRUPTED_RUN",
+        "A11_RERUN_IDEMPOTENCE",
+        "A16_ARTIFACT_COMMIT"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 6878,
+          "event_id": "S1",
+          "excerpt_sha256": "ec68fa8278c8436606c635aca77106ef5dcfb4b146172970b2a347cbf648daa8",
+          "source_id": "S1",
+          "start": 6751
+        }
+      ]
+    },
+    {
+      "id": "R-P145",
+      "source_proposition_ids": [
+        "P145"
+      ],
+      "statement": "MUST The system must preserve transaction values accurately, especially amounts, identifiers, and timestamps.",
+      "expected_observation": "Evidence from A02_SCHEMA_VALIDATION, A03_CSV_DIALECT, A04_EXACT_DECIMAL, A25_VALUES_NO_NORMALIZATION demonstrates the exact source clause P145 (preserve_amount_ids_timestamps) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A03_CSV_DIALECT",
+        "A04_EXACT_DECIMAL",
+        "A25_VALUES_NO_NORMALIZATION"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 7128,
+          "event_id": "S1",
+          "excerpt_sha256": "07a29e650bd5a88062bf0f0b6dd0f4480966b4ac3a1392464e9f5bc43bd6f071",
+          "source_id": "S1",
+          "start": 7024
+        }
+      ]
+    },
+    {
+      "id": "R-P147",
+      "source_proposition_ids": [
+        "P147"
+      ],
+      "statement": "MUST NOT It must not silently discard records, truncate fields, or incorrectly combine data from separate transactions.",
+      "expected_observation": "No observed violation of prohibition P147 (silent_discard_truncation_or_row_combination); counterexample cases A02_SCHEMA_VALIDATION, A03_CSV_DIALECT, A06_UNTRUSTED_CSV_FATAL, A11_RERUN_IDEMPOTENCE, A14_RECORD_LIMITS, A25_VALUES_NO_NORMALIZATION, A26_REJECTION_PROVENANCE detect violation, and production artifacts never misrepresent an incomplete or altered transaction.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A03_CSV_DIALECT",
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A11_RERUN_IDEMPOTENCE",
+        "A14_RECORD_LIMITS",
+        "A25_VALUES_NO_NORMALIZATION",
+        "A26_REJECTION_PROVENANCE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 7240,
+          "event_id": "S1",
+          "excerpt_sha256": "75b72708ec2265853122a16a6210eba1e167194e21480d80ba603fea7938128d",
+          "source_id": "S1",
+          "start": 7130
+        }
+      ]
+    },
+    {
+      "id": "R-P149",
+      "source_proposition_ids": [
+        "P149"
+      ],
+      "statement": "MUST The accepted and rejected record counts must reconcile to the total number of records examined.",
+      "expected_observation": "Evidence from A05_BAD_ROW_CONTINUE, A08_EMPTY_HEADER, A15_RECONCILE_SUMMARY, A25_VALUES_NO_NORMALIZATION demonstrates the exact source clause P149 (accepted_plus_rejected_equals_examined) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A08_EMPTY_HEADER",
+        "A15_RECONCILE_SUMMARY",
+        "A25_VALUES_NO_NORMALIZATION"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 7337,
+          "event_id": "S1",
+          "excerpt_sha256": "69702ebf2670506b8fbadc04afc597559aa5f709961f52e4ab3ca1e15f7b7370",
+          "source_id": "S1",
+          "start": 7242
+        }
+      ]
+    },
+    {
+      "id": "R-P151",
+      "source_proposition_ids": [
+        "P151"
+      ],
+      "statement": "MUST NOT Sensitive payment or account information must not be exposed unnecessarily in console logs or diagnostic messages.",
+      "expected_observation": "No observed violation of prohibition P151 (unnecessary_sensitive_data_exposure); counterexample cases A13_PROGRESS_PRIVACY, A20_SECURITY_LOCAL detect violation, and production artifacts never misrepresent an incomplete or altered transaction.",
+      "acceptance_ids": [
+        "A13_PROGRESS_PRIVACY",
+        "A20_SECURITY_LOCAL"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 7453,
+          "event_id": "S1",
+          "excerpt_sha256": "e8ec337c4e371ed8f94404df0fd134e3f0ec0b9ebd1549975f1ff34f1c24463e",
+          "source_id": "S1",
+          "start": 7339
+        }
+      ]
+    },
+    {
+      "id": "R-P153",
+      "source_proposition_ids": [
+        "P153"
+      ],
+      "statement": "MUST The parser should work entirely within our internal environment and must not require uploading financial data to an external service.",
+      "expected_observation": "Evidence from A13_PROGRESS_PRIVACY, A20_SECURITY_LOCAL demonstrates the exact source clause P153 (internal_only_no_external_financial_upload) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A13_PROGRESS_PRIVACY",
+        "A20_SECURITY_LOCAL"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 7588,
+          "event_id": "S1",
+          "excerpt_sha256": "58240a8a939cfc8b1193c5eb6ae3d856e6e6c70271a8b99ddc3c4b646b084532",
+          "source_id": "S1",
+          "start": 7455
+        }
+      ]
+    },
+    {
+      "id": "R-P157",
+      "source_proposition_ids": [
+        "P157"
+      ],
+      "statement": "MUST Before accepting the application, we need demonstrated evidence that it works under realistic operating conditions.",
+      "expected_observation": "Evidence from A18_BENCHMARKS, A22_ACCEPTANCE_GATE demonstrates the exact source clause P157 (demonstrable_realistic_conditions_before_acceptance) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS",
+        "A22_ACCEPTANCE_GATE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 7745,
+          "event_id": "S1",
+          "excerpt_sha256": "206b6e9a48338c7aa6fe195fd39d939b8e3c142535addd262664438cf8070c5d",
+          "source_id": "S1",
+          "start": 7630
+        }
+      ]
+    },
+    {
+      "id": "R-P161",
+      "source_proposition_ids": [
+        "P161"
+      ],
+      "statement": "MUST Small, medium, and very large CSV files.",
+      "expected_observation": "Evidence from A18_BENCHMARKS demonstrates the exact source clause P161 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 7824,
+          "event_id": "S1",
+          "excerpt_sha256": "988458c03da9d0210ecbe828887bc3d847d025345b1a32d8fd84569e3f57bd1b",
+          "source_id": "S1",
+          "start": 7782
+        }
+      ]
+    },
+    {
+      "id": "R-P162",
+      "source_proposition_ids": [
+        "P162"
+      ],
+      "statement": "MUST Files exceeding the available system RAM.",
+      "expected_observation": "Evidence from A18_BENCHMARKS demonstrates the exact source clause P162 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 7868,
+          "event_id": "S1",
+          "excerpt_sha256": "908e6c0c8b171fe188d3c0c2a20eec1a79c4317d809092f37e0b3fb1dc2ba9be",
+          "source_id": "S1",
+          "start": 7825
+        }
+      ]
+    },
+    {
+      "id": "R-P163",
+      "source_proposition_ids": [
+        "P163"
+      ],
+      "statement": "MUST Files containing millions of valid transactions.",
+      "expected_observation": "Evidence from A18_BENCHMARKS demonstrates the exact source clause P163 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 7919,
+          "event_id": "S1",
+          "excerpt_sha256": "b96b72f4db540adff87f1940b2cbbcfb781cef0a2255b79b99d37886b978e73f",
+          "source_id": "S1",
+          "start": 7869
+        }
+      ]
+    },
+    {
+      "id": "R-P164",
+      "source_proposition_ids": [
+        "P164"
+      ],
+      "statement": "MUST Malformed CSV content, broken quoting, and missing fields.",
+      "expected_observation": "Evidence from A05_BAD_ROW_CONTINUE, A06_UNTRUSTED_CSV_FATAL, A23_INCORRECT_HEADER demonstrates the exact source clause P164 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A23_INCORRECT_HEADER"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 7980,
+          "event_id": "S1",
+          "excerpt_sha256": "9eb28fa5374b972bcdaab71b9e3345383b001d9c3c4a8e2130c8b829ec4b4353",
+          "source_id": "S1",
+          "start": 7920
+        }
+      ]
+    },
+    {
+      "id": "R-P165",
+      "source_proposition_ids": [
+        "P165"
+      ],
+      "statement": "MUST Quoted delimiters, escaped quotes, and embedded newlines.",
+      "expected_observation": "Evidence from A03_CSV_DIALECT demonstrates the exact source clause P165 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A03_CSV_DIALECT"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8040,
+          "event_id": "S1",
+          "excerpt_sha256": "6c960b7b6d0ab6e057e81cb5a1b9e8dd5d8484e7fd34afed5263cf83c5054259",
+          "source_id": "S1",
+          "start": 7981
+        }
+      ]
+    },
+    {
+      "id": "R-P166",
+      "source_proposition_ids": [
+        "P166"
+      ],
+      "statement": "MUST Empty files and header-only files.",
+      "expected_observation": "Evidence from A08_EMPTY_HEADER demonstrates the exact source clause P166 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A08_EMPTY_HEADER"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8077,
+          "event_id": "S1",
+          "excerpt_sha256": "73382749c1d32e59fe84b28410ea3a2b5f60039d913d2d28639a0d822f34e58f",
+          "source_id": "S1",
+          "start": 8041
+        }
+      ]
+    },
+    {
+      "id": "R-P167",
+      "source_proposition_ids": [
+        "P167"
+      ],
+      "statement": "MUST Corrupted and truncated gzip archives.",
+      "expected_observation": "Evidence from A07_CORRUPT_GZIP_FATAL demonstrates the exact source clause P167 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A07_CORRUPT_GZIP_FATAL"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8118,
+          "event_id": "S1",
+          "excerpt_sha256": "c16d016339851de894f49e94c7c2bf7c3a1a946dfabb1d0b0cb87a6c9371c533",
+          "source_id": "S1",
+          "start": 8078
+        }
+      ]
+    },
+    {
+      "id": "R-P168",
+      "source_proposition_ids": [
+        "P168"
+      ],
+      "statement": "MUST Oversized individual records.",
+      "expected_observation": "Evidence from A14_RECORD_LIMITS demonstrates the exact source clause P168 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A14_RECORD_LIMITS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8150,
+          "event_id": "S1",
+          "excerpt_sha256": "9ad807cbfdab12ab0acb35bd8f1503ebbdbedab88b40d7bbeed0db24f40541d3",
+          "source_id": "S1",
+          "start": 8119
+        }
+      ]
+    },
+    {
+      "id": "R-P169",
+      "source_proposition_ids": [
+        "P169"
+      ],
+      "statement": "MUST Simulated output-write failures and insufficient disk space.",
+      "expected_observation": "Evidence from A09_WRITE_FAILURE demonstrates the exact source clause P169 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A09_WRITE_FAILURE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8213,
+          "event_id": "S1",
+          "excerpt_sha256": "17efc19d8f71a036858861a88f735b8921d859e285ce6952593bebab734c89c3",
+          "source_id": "S1",
+          "start": 8151
+        }
+      ]
+    },
+    {
+      "id": "R-P170",
+      "source_proposition_ids": [
+        "P170"
+      ],
+      "statement": "MUST Repeated execution against the same input.",
+      "expected_observation": "Evidence from A10_INTERRUPTED_RUN, A11_RERUN_IDEMPOTENCE demonstrates the exact source clause P170 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A10_INTERRUPTED_RUN",
+        "A11_RERUN_IDEMPOTENCE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8258,
+          "event_id": "S1",
+          "excerpt_sha256": "2543fde30600127f00beea9e4e256fc21e6e1dbfc63123f1500c20abcfa77e03",
+          "source_id": "S1",
+          "start": 8214
+        }
+      ]
+    },
+    {
+      "id": "R-P171",
+      "source_proposition_ids": [
+        "P171"
+      ],
+      "statement": "MUST Financial calculation accuracy and record-count reconciliation.",
+      "expected_observation": "Evidence from A04_EXACT_DECIMAL demonstrates the exact source clause P171 (test_case) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A04_EXACT_DECIMAL"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8324,
+          "event_id": "S1",
+          "excerpt_sha256": "b2c0f5a9a32deaed9d408f967db0fd5a4da256eddffd3db9c5ec1b2033fec400",
+          "source_id": "S1",
+          "start": 8259
+        }
+      ]
+    },
+    {
+      "id": "R-P173",
+      "source_proposition_ids": [
+        "P173"
+      ],
+      "statement": "MUST We specifically want memory measurements demonstrating that the application does not experience unbounded growth during long processing runs.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY, A18_BENCHMARKS demonstrates the exact source clause P173 (prove_no_unbounded_growth_in_long_runs) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8467,
+          "event_id": "S1",
+          "excerpt_sha256": "badcf0feb2f86a05298db3f7a78f710cebe0d7f1a57fb1e5cbb537f6a63822c9",
+          "source_id": "S1",
+          "start": 8326
+        }
+      ]
+    },
+    {
+      "id": "R-P175",
+      "source_proposition_ids": [
+        "P175"
+      ],
+      "statement": "MUST A successful test should demonstrate processing of a file significantly larger than system memory while staying within the agreed memory budget.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY, A18_BENCHMARKS, A22_ACCEPTANCE_GATE demonstrates the exact source clause P175 (files_significantly_larger_than_ram_inside_agreed_budget) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS",
+        "A22_ACCEPTANCE_GATE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8613,
+          "event_id": "S1",
+          "excerpt_sha256": "5bf493039df3ae2c9b48fee9ed01b9a38b79d286c33f4f5809ea218e920275fb",
+          "source_id": "S1",
+          "start": 8469
+        }
+      ]
+    },
+    {
+      "id": "R-P177",
+      "source_proposition_ids": [
+        "P177"
+      ],
+      "statement": "MUST We also expect automated tests that verify parsing correctness, validation behavior, error handling, output integrity, and failure recovery.",
+      "expected_observation": "Evidence from A02_SCHEMA_VALIDATION, A09_WRITE_FAILURE, A22_ACCEPTANCE_GATE demonstrates the exact source clause P177 (automated_correctness_validation_error_integrity_recovery) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A09_WRITE_FAILURE",
+        "A22_ACCEPTANCE_GATE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8755,
+          "event_id": "S1",
+          "excerpt_sha256": "d8b3e18a45d32f31d6f1459cc368ffe320ccb67330eee6529d1509e52bedf470",
+          "source_id": "S1",
+          "start": 8615
+        }
+      ]
+    },
+    {
+      "id": "R-P183",
+      "source_proposition_ids": [
+        "P183"
+      ],
+      "statement": "MUST Python 3.12 or later",
+      "expected_observation": "Evidence from A19_DOCS_OPERATIONS, A21_COMPONENT_SEPARATION demonstrates the exact source clause P183 (python_version) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS",
+        "A21_COMPONENT_SEPARATION"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8866,
+          "event_id": "S1",
+          "excerpt_sha256": "d0fbbd51a2856c16bcbcbf2703841cd7e25e743de0ffe83057996c3d6815b816",
+          "source_id": "S1",
+          "start": 8828
+        }
+      ]
+    },
+    {
+      "id": "R-P184",
+      "source_proposition_ids": [
+        "P184"
+      ],
+      "statement": "MUST Complete source code with clear separation between file reading, parsing, validation, and output writing.",
+      "expected_observation": "Evidence from A19_DOCS_OPERATIONS, A21_COMPONENT_SEPARATION demonstrates the exact source clause P184 (code_separation) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS",
+        "A21_COMPONENT_SEPARATION"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 8975,
+          "event_id": "S1",
+          "excerpt_sha256": "0ca0deea73c56883ce783ff81d3cb967d61c41a6a908535bd3f789fbe4d9667e",
+          "source_id": "S1",
+          "start": 8867
+        }
+      ]
+    },
+    {
+      "id": "R-P185",
+      "source_proposition_ids": [
+        "P185"
+      ],
+      "statement": "MUST A command-line interface for operations.",
+      "expected_observation": "Evidence from A12_CLI_UNATTENDED demonstrates the exact source clause P185 (required_delivery_component) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 9019,
+          "event_id": "S1",
+          "excerpt_sha256": "3a5af468622ec5a7508ea40ce6d386dba1c69c1c5d914cc41736861561bee2da",
+          "source_id": "S1",
+          "start": 8976
+        }
+      ]
+    },
+    {
+      "id": "R-P186",
+      "source_proposition_ids": [
+        "P186"
+      ],
+      "statement": "MUST Automated unit, integration, and large-file performance tests.",
+      "expected_observation": "Evidence from A21_COMPONENT_SEPARATION demonstrates the exact source clause P186 (required_delivery_component) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A21_COMPONENT_SEPARATION"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 9085,
+          "event_id": "S1",
+          "excerpt_sha256": "b42d4f099c502c7f497011fc5a958796d179409f03d2af8c08edaaa07c47d948",
+          "source_id": "S1",
+          "start": 9020
+        }
+      ]
+    },
+    {
+      "id": "R-P187",
+      "source_proposition_ids": [
+        "P187"
+      ],
+      "statement": "MUST A representative transaction-data generator for testing large workloads without using actual customer financial information.",
+      "expected_observation": "Evidence from A17_SYNTHETIC_GENERATOR demonstrates the exact source clause P187 (required_delivery_component) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A17_SYNTHETIC_GENERATOR"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 9213,
+          "event_id": "S1",
+          "excerpt_sha256": "04ec1096d99d7766fcb3db200b1ce5fcdc995a8bc088ff71111ea5d22aa4c178",
+          "source_id": "S1",
+          "start": 9086
+        }
+      ]
+    },
+    {
+      "id": "R-P188",
+      "source_proposition_ids": [
+        "P188"
+      ],
+      "statement": "MUST Benchmark results documenting memory consumption and processing throughput.",
+      "expected_observation": "Evidence from A18_BENCHMARKS demonstrates the exact source clause P188 (required_delivery_component) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 9292,
+          "event_id": "S1",
+          "excerpt_sha256": "066d8028729b6c98f2358626572d8e4a85b8b6a5c3ae70dc0f0508eedfaf8ac8",
+          "source_id": "S1",
+          "start": 9214
+        }
+      ]
+    },
+    {
+      "id": "R-P189",
+      "source_proposition_ids": [
+        "P189"
+      ],
+      "statement": "MUST Installation, configuration, and operating instructions.",
+      "expected_observation": "Evidence from A19_DOCS_OPERATIONS demonstrates the exact source clause P189 (required_delivery_component) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 9352,
+          "event_id": "S1",
+          "excerpt_sha256": "0da0ee77b5a2b1d6a9396f339060ae2f5c13711785f34680018b22df4bc1c7d2",
+          "source_id": "S1",
+          "start": 9293
+        }
+      ]
+    },
+    {
+      "id": "R-P190",
+      "source_proposition_ids": [
+        "P190"
+      ],
+      "statement": "MUST Clear documentation of known limitations, error handling, and recovery procedures.",
+      "expected_observation": "Evidence from A19_DOCS_OPERATIONS demonstrates the exact source clause P190 (required_delivery_component) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 9438,
+          "event_id": "S1",
+          "excerpt_sha256": "aeef941b69ba53b3650a74c8bba39d4703dde5d7e490720869a1a15cfd35e50b",
+          "source_id": "S1",
+          "start": 9353
+        }
+      ]
+    },
+    {
+      "id": "R-P194",
+      "source_proposition_ids": [
+        "P194"
+      ],
+      "statement": "MUST acceptance_input_file_size: 100 GB file",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY, A18_BENCHMARKS demonstrates the exact source clause P194 (acceptance_input_file_size) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 9772,
+          "event_id": "S1",
+          "excerpt_sha256": "c2c75b52a13c30229df744d73aeaf2a825f3b1396f7d787e12909eeaf67761d9",
+          "source_id": "S1",
+          "start": 9466
+        }
+      ]
+    },
+    {
+      "id": "R-P194_ENV",
+      "source_proposition_ids": [
+        "P194_ENV"
+      ],
+      "statement": "MUST success_test_host: 8 GB RAM",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY, A18_BENCHMARKS demonstrates the exact source clause P194_ENV (success_test_host) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 9772,
+          "event_id": "S1",
+          "excerpt_sha256": "c2c75b52a13c30229df744d73aeaf2a825f3b1396f7d787e12909eeaf67761d9",
+          "source_id": "S1",
+          "start": 9466
+        }
+      ]
+    },
+    {
+      "id": "R-P196",
+      "source_proposition_ids": [
+        "P196"
+      ],
+      "statement": "MUST The system must demonstrate bounded memory use, preserve financial accuracy, handle malformed records predictably, and provide verifiable evidence that no transactions were silently lost.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY, A22_ACCEPTANCE_GATE demonstrates the exact source clause P196 (acceptance_bounded_memory_accuracy_malformed_reconciliation) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A22_ACCEPTANCE_GATE"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 9961,
+          "event_id": "S1",
+          "excerpt_sha256": "940d951a5215a4a4344995106bf5704f41bf78719318db35c074a2a3b218c5e6",
+          "source_id": "S1",
+          "start": 9774
+        }
+      ]
+    },
+    {
+      "id": "R-P198",
+      "source_proposition_ids": [
+        "P198"
+      ],
+      "statement": "MUST Our primary objective is reliability at scale. We want file size to affect processing time, not cause uncontrolled memory consumption or application failure.",
+      "expected_observation": "Evidence from A01_STREAM_MEMORY demonstrates the exact source clause P198 (scale_affects_time_not_unbounded_memory) under its specified scope GLOBAL.",
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "source_scope": "GLOBAL",
+      "original_source_anchors": [
+        {
+          "end": 10124,
+          "event_id": "S1",
+          "excerpt_sha256": "f8248cfcef918d291a25d7fc3e88a2a815ba07ef5f9a3e8c23906103160b4cfc",
+          "source_id": "S1",
+          "start": 9963
+        }
+      ]
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "A01_STREAM_MEMORY",
+      "name": "CSV and gzip input streams larger than available RAM",
+      "requirement_ids": [
+        "R-P107",
+        "R-P113",
+        "R-P119",
+        "R-P121",
+        "R-P173",
+        "R-P175",
+        "R-P194",
+        "R-P194_ENV",
+        "R-P196",
+        "R-P198",
+        "R-P21",
+        "R-P23",
+        "R-P27",
+        "R-P31",
+        "R-P37",
+        "R-P38",
+        "R-P39",
+        "R-P40",
+        "R-P41",
+        "R-P42",
+        "R-P43"
+      ],
+      "input": {
+        "scenario": "Producer generates deterministic CSV and gzip input of increasing size, up to at least 150 GB; 8 GB Linux host; bounded configured batch and record limits.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "No whole input or output materialization; bounded process RSS across the file-size ladder; 100 GB+ completed on 8 GB host, demonstrate support at >=150 GB; finite 10,000 default records per batch; changes in input size scale elapsed time, not unbounded RAM.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P107, P113, P119, P121, P173, P175, P194, P194_ENV, P196, P198, P21, P23, P27, P31, P37, P38, P39, P40, P41, P42, P43; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A02_SCHEMA_VALIDATION",
+      "name": "Explicit configured schema accepts typed row; rejects invalid row",
+      "requirement_ids": [
+        "R-P145",
+        "R-P147",
+        "R-P177",
+        "R-P58",
+        "R-P60",
+        "R-P66",
+        "R-P76",
+        "R-P78"
+      ],
+      "input": {
+        "scenario": "A known test-only policy declares eight columns, timestamp rule, decimal syntax, permitted currencies USD/EUR and required fields; mutate missing fields, bad timestamp, nondecimal, unsupported currency, wrong width.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Valid rows preserved in accepted CSV; each independently recoverable invalid row appears once in rejected CSV with reason; no field guessing or conversion of identifiers to numbers.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P145, P147, P177, P58, P60, P66, P76, P78; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A03_CSV_DIALECT",
+      "name": "Escaped quotes, comma and multiline fields",
+      "requirement_ids": [
+        "R-P145",
+        "R-P147",
+        "R-P165",
+        "R-P64"
+      ],
+      "input": {
+        "scenario": "Use CSV sample with an account reference containing comma, escaped double-quote and embedded line feed; encode with standard csv.writer.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "One logical transaction per CSV record, all text values identical after csv.reader round trip; no transaction recombination; start/end physical line span recorded for rejection.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P145, P147, P165, P64; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A04_EXACT_DECIMAL",
+      "name": "Exact multi-currency accepted totals",
+      "requirement_ids": [
+        "R-P102",
+        "R-P145",
+        "R-P171",
+        "R-P62"
+      ],
+      "input": {
+        "scenario": "Source-independent golden sample amounts USD 0.10 + 0.20; EUR 8.00; further tests negative signs, zero, large magnitudes, repeated amounts.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Use exact Decimal/integer-scale arithmetic; JSON accepted totals numerically exact USD 0.30, EUR 8.00; reject invalid/nonfinite values; no float intermediate, no inferred currency conversion.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P102, P145, P171, P62; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A05_BAD_ROW_CONTINUE",
+      "name": "Recoverable record validation defect continues",
+      "requirement_ids": [
+        "R-P100",
+        "R-P101",
+        "R-P149",
+        "R-P164",
+        "R-P60",
+        "R-P74",
+        "R-P76",
+        "R-P78",
+        "R-P92",
+        "R-P98",
+        "R-P99"
+      ],
+      "input": {
+        "scenario": "Five-row sample of three valid and two invalid transactions, including bad amount and unsupported currency.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Examined=5, accepted=3, rejected=2, exactly two reasoned rejected records; accepted rows preserve all eight column values; full file examined and safe PARTIAL completion.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P100, P101, P149, P164, P60, P74, P76, P78, P92, P98, P99; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A06_UNTRUSTED_CSV_FATAL",
+      "name": "Broken quote or non-resynchronizable CSV is fatal",
+      "requirement_ids": [
+        "R-P147",
+        "R-P164",
+        "R-P80",
+        "R-P84_FATAL"
+      ],
+      "input": {
+        "scenario": "CSV stream ends while inside quoted field or has broken quote structure under strict parsing.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Nonzero failure exit/status FAILED; never publish COMMITTED completion marker; report incomplete/last reliably examined record; no speculative resynchronization or silent loss.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P147, P164, P80, P84_FATAL; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A07_CORRUPT_GZIP_FATAL",
+      "name": "Corrupt or truncated gzip fails safely",
+      "requirement_ids": [
+        "R-P167",
+        "R-P42",
+        "R-P80",
+        "R-P84_FATAL"
+      ],
+      "input": {
+        "scenario": "Gzip content with CRC damage or missing trailer, with earlier valid records.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "No completed success files or marker, FAILED status and incomplete diagnostic; no false acceptance, and no predecompression.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P167, P42, P80, P84_FATAL; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A08_EMPTY_HEADER",
+      "name": "Empty and header-only cases",
+      "requirement_ids": [
+        "R-P149",
+        "R-P166",
+        "R-P60"
+      ],
+      "input": {
+        "scenario": "A truly empty CSV and a CSV containing only the configured header.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Empty lacks required header and is FAILED with no commit; correct header-only is SUCCESS, examined=accepted=rejected=0, zero totals and committed artifacts.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P149, P166, P60; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A09_WRITE_FAILURE",
+      "name": "Output failure and disk exhaustion",
+      "requirement_ids": [
+        "R-P169",
+        "R-P177",
+        "R-P80",
+        "R-P82",
+        "R-P84"
+      ],
+      "input": {
+        "scenario": "Inject EIO or ENOSPC with a hand-written failing writer injected via a declared writer seam; test real file permissions and restricted-volume where possible.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "FAILED/incomplete, no COMMITTED marker, staged data never treated as approved; any surviving diagnostic states counts and incomplete; process exits failure.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P169, P177, P80, P82, P84; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A10_INTERRUPTED_RUN",
+      "name": "Crash/termination and interrupted write",
+      "requirement_ids": [
+        "R-P139",
+        "R-P170",
+        "R-P82",
+        "R-P84"
+      ],
+      "input": {
+        "scenario": "Terminate subprocess after an observable progress checkpoint while transaction stream has more records.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "No COMMITTED marker; staging visibly incomplete and quarantined; safe rerun starts distinct attempt and cannot append to a prior result.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P139, P170, P82, P84; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A11_RERUN_IDEMPOTENCE",
+      "name": "Repeated execution",
+      "requirement_ids": [
+        "R-P139",
+        "R-P147",
+        "R-P170"
+      ],
+      "input": {
+        "scenario": "Run same canonical file with same output path twice without explicit override.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Second run never appends or doubles accepted/rejected rows; either refuses an existing committed output or creates distinct safely versioned outputs, with documented deterministic policy.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P139, P147, P170; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A12_CLI_UNATTENDED",
+      "name": "CLI argument validation and scheduler behavior",
+      "requirement_ids": [
+        "R-P127",
+        "R-P133",
+        "R-P135",
+        "R-P137",
+        "R-P185"
+      ],
+      "input": {
+        "scenario": "Invoke python main.py --input ... --output ... --schema ... --batch-size 10000; invalid paths/config/size rejected.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Successful complete run exit=0; completed-with-rejections exit=2; fatal/incomplete exit=1; quiet records with progress to stderr and structured summary; no prompts.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P127, P133, P135, P137, P185; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A13_PROGRESS_PRIVACY",
+      "name": "Bounded, privacy-safe progress",
+      "requirement_ids": [
+        "R-P135",
+        "R-P151",
+        "R-P153"
+      ],
+      "input": {
+        "scenario": "Run thousands of rows with distinctive account identifiers and secrets, capture stdout/stderr.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "No raw transaction identifiers, amounts or customer identifiers appear in console progress; bounded progress frequency with counts, bytes or percent and no row dump.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P135, P151, P153; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A14_RECORD_LIMITS",
+      "name": "Oversized record safely bounded",
+      "requirement_ids": [
+        "R-P133",
+        "R-P147",
+        "R-P168",
+        "R-P43"
+      ],
+      "input": {
+        "scenario": "A record exceeds configured max bytes; very long single field and very many small fields, also gzip expansion.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Fail safely before unbounded buffering or truncation; identify source location and bound; no final completed status. Both whole-record and field limits enforced.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P133, P147, P168, P43; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A15_RECONCILE_SUMMARY",
+      "name": "JSON complete run reconciliation and metadata",
+      "requirement_ids": [
+        "R-P100",
+        "R-P101",
+        "R-P102",
+        "R-P103",
+        "R-P104",
+        "R-P105",
+        "R-P149",
+        "R-P96",
+        "R-P97",
+        "R-P98",
+        "R-P99"
+      ],
+      "input": {
+        "scenario": "Use fixed five-record golden CSV and inspect report from fully completed run.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Input identity/size; UTC start/end; examined=5 accepted=3 rejected=2; rejection reasons; accepted totals by currency; duration, throughput, final PARTIAL status and complete=true; accepted+rejected=examined.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P100, P101, P102, P103, P104, P105, P149, P96, P97, P98, P99; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A16_ARTIFACT_COMMIT",
+      "name": "No misleading partial outputs",
+      "requirement_ids": [
+        "R-P107",
+        "R-P139",
+        "R-P84",
+        "R-P84_FATAL",
+        "R-P90",
+        "R-P92"
+      ],
+      "input": {
+        "scenario": "Success, completed-with-rejections, fatal, and interrupted file workflows.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Only after all outputs closed, synced, checked and promoted does a final commit marker indicate usable results; on failure no marker and no final success classification.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P107, P139, P84, P84_FATAL, P90, P92; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A17_SYNTHETIC_GENERATOR",
+      "name": "Artificial test-data generator",
+      "requirement_ids": [
+        "R-P187"
+      ],
+      "input": {
+        "scenario": "Generate reproducible 100,000-row synthetic CSV and a gzip variant using only invented identifiers and synthetic amounts.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Deterministic seed/row count; no real customer information; streaming generator emits configured columns and precomputable independent count/total invariants.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P187; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A18_BENCHMARKS",
+      "name": "Bench evidence cannot be asserted in advance",
+      "requirement_ids": [
+        "R-P123",
+        "R-P157",
+        "R-P161",
+        "R-P162",
+        "R-P163",
+        "R-P173",
+        "R-P175",
+        "R-P188",
+        "R-P194",
+        "R-P194_ENV"
+      ],
+      "input": {
+        "scenario": "Run measured progressive sizes small/medium/large/multiple-GiB, 100GB and >=150GB on documented Linux 8GB target with raw logs.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Report peak RSS, elapsed time, bytes and rows/s, environment, batch size, record cap, actual input hash/size, repeated checkpoints; distinguish preferred <512MB from required bounded 8GB operation.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P123, P157, P161, P162, P163, P173, P175, P188, P194, P194_ENV; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A19_DOCS_OPERATIONS",
+      "name": "Deployment and recovery documentation",
+      "requirement_ids": [
+        "R-P183",
+        "R-P184",
+        "R-P189",
+        "R-P190"
+      ],
+      "input": {
+        "scenario": "Install from source on offline Python 3.12+ Linux; run valid/invalid and interrupted fixtures.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Reproducible setup instructions; explain schema config, limits, statuses, disk estimates, no-commit recovery and known limitations; actual tested evidence linked.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P183, P184, P189, P190; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A20_SECURITY_LOCAL",
+      "name": "Financial data never externally submitted",
+      "requirement_ids": [
+        "R-P151",
+        "R-P153"
+      ],
+      "input": {
+        "scenario": "Run with network unavailable; inspect code dependencies and CLI logging with sentinel values.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "All processing local; no uploading financial data; permission checks and redaction apply; output contains data only in locally permissioned files.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P151, P153; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A21_COMPONENT_SEPARATION",
+      "name": "Reader/parser/validator/writer separated",
+      "requirement_ids": [
+        "R-P183",
+        "R-P184",
+        "R-P186",
+        "R-P27"
+      ],
+      "input": {
+        "scenario": "Inspect built module dependency graph, injection seams and source layout; exercise with concrete in-memory adapters.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Python >=3.12 implementation with separate bounded source reading, CSV parser, schema validator, atomic result writer and orchestrator; unit tests use meaningful concrete seams without mocks.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P183, P184, P186, P27; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A22_ACCEPTANCE_GATE",
+      "name": "Release is evidence gated",
+      "requirement_ids": [
+        "R-P157",
+        "R-P175",
+        "R-P177",
+        "R-P196"
+      ],
+      "input": {
+        "scenario": "Review independent oracle runs and exact final bytes of production candidate after representative 100 GB 8 GB test and all specified edge tests.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "No production-ready PASS without actual correctness/recovery evidence, coverage-first check, applicable advanced checks and human approval; only observable RUN proof may establish acceptance.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P157, P175, P177, P196; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A23_INCORRECT_HEADER",
+      "name": "Incorrect columns are not silently remapped",
+      "requirement_ids": [
+        "R-P164",
+        "R-P58",
+        "R-P60",
+        "R-P66"
+      ],
+      "input": {
+        "scenario": "Duplicate, missing, unknown or reordered header versus explicitly configured policy; row length shorter or longer than declared columns.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "No guessed mapping; malformed required structure either rejected per row when boundaries reliable or file-level failure where header map cannot be trusted; source and counts explicit.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P164, P58, P60, P66; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A24_BATCH_CONFIG",
+      "name": "Configurable bounded batch sizing",
+      "requirement_ids": [
+        "R-P133",
+        "R-P40",
+        "R-P41",
+        "R-P43"
+      ],
+      "input": {
+        "scenario": "Run same fixed fixture with batch sizes 1, 7, 10000 and an invalid zero or negative size.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Identical ordered rows, accepted/rejected classification and totals; invalid sizes fail before opening outputs; record counts do not alter RAM proportionality.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P133, P40, P41, P43; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A25_VALUES_NO_NORMALIZATION",
+      "name": "Preserve identifiers, timestamps, record multiplicity",
+      "requirement_ids": [
+        "R-P145",
+        "R-P147",
+        "R-P149",
+        "R-P66"
+      ],
+      "input": {
+        "scenario": "Include leading zeros, case-sensitive IDs, differing timestamps, multiple records with same transaction ID; include escaped delimiters.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Preserve semantic field text, amount mathematical value and each source transaction exactly once; no invented timezone, currency or duplicate filtering.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P145, P147, P149, P66; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A26_REJECTION_PROVENANCE",
+      "name": "Reject record provenance and context",
+      "requirement_ids": [
+        "R-P147",
+        "R-P78",
+        "R-P92"
+      ],
+      "input": {
+        "scenario": "Invalid amount on logical record with multiline field; exact captured source raw text if bounded and recoverable.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Reason includes stable code; source logical row index and starting/ending physical lines; original raw record when recoverable; never present fabricated reconstruction as original.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P147, P78, P92; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    },
+    {
+      "id": "A27_PARTIAL_STATE",
+      "name": "Completed with rejects is not fatal interruption",
+      "requirement_ids": [
+        "R-P105",
+        "R-P137",
+        "R-P74",
+        "R-P76",
+        "R-P80",
+        "R-P82",
+        "R-P84"
+      ],
+      "input": {
+        "scenario": "Compare fully parsed file containing rejects and truncated gzip stopped halfway.",
+        "fixture_or_execution_plan": "tests/test_acceptance_contract.py and tests/test_fatal_and_replay.py; performance 100/150 GB target-host plan only where physical resources required"
+      },
+      "expected": {
+        "oracle_invariant": "Full-file parsed with rejects yields complete=true, PARTIAL, exit=2 and commit marker; interruption yields complete=false, FAILED, exit=1 and no marker.",
+        "comparison": "Independent oracle; never compare implementation with itself; use golden fixture or observation stated in source"
+      },
+      "oracle_source": "Immutable source/contract.xml propositions P105, P137, P74, P76, P80, P82, P84; design-specific implementation choices explicitly documented in core_docs/03 and 06",
+      "implementation_status": "NOT_YET_EXECUTED",
+      "expected_output_authority": "SOURCE_OBLIGATION_PLUS_EXPLICIT_TECHNICAL_DESIGN_CHOICE"
+    }
+  ],
+  "architecture": {
+    "summary": "Stream stdin-free local file path through bounded binary/gzip input, strict csv.reader with record-span capture and cap, operator-supplied versioned schema validator, exact decimal accumulator, and staged CSV writers plus JSON reconciliation. Commit is a separate durable marker after all output files are complete; no completed artifact is authoritative without marker. A single sequential process and explicit injected filesystem, clock and progress seams avoid synchronization complexity, support deterministic tests and prevent expanding memory with total row count.",
+    "interfaces": [
+      "CLI main.py --input PATH --output DIR --schema POLICY.json --batch-size N --max-record-bytes N --on-record-error reject|fail; status exit=0/2/1 under documented design.",
+      "ByteSource => iterator of bounded physical line bytes; gzip stream decompression in chunks, Unicode decode with explicit encoding; strict CSV parser yields logical record with physical span.",
+      "Validator accepts explicit immutable SchemaConfig + candidate string columns; returns AcceptedTransaction or RejectedRecord(code, location, raw if available); never mutates original fields.",
+      "Accounting ledger counts examined, accepted, rejected and exact amount per currency; only completed file runs enforce examined == accepted + rejected.",
+      "Output sink writes validated.csv and rejected.csv to private attempt staging files; final summary.json and COMMITTED.json published on successful or fully read partial-with-rejections completion.",
+      "Dependency seams: FileSystem(open/replace/fsync) protocol, Clock(time/monotonic), EventSink(progress), RawSource, CsvWriter; tests inject handwritten concrete implementations.",
+      "Batching is capped by BOTH configurable record count (target default 10000) AND a separate maximum aggregate buffered byte budget; if even one row exceeds the cap, fail before retaining it; do not allocate 10000 maximum-sized rows.",
+      "The decompression/byte reader reads fixed-size chunks and detects maximum physical line/record length BEFORE creating unbounded line/text strings, never relying on unbounded file.readline or naive gzip iteration."
+    ],
+    "failure_modes": [
+      "Unbalanced quotes/unknown headers/unrecoverable decoder or gzip CRC/trailer => fatal FAILED no final marker and count observed progress only.",
+      "Invalid row of a valid shape (malformed amount/timestamp/currency) => reason-coded rejection with raw source fragment where recoverable; stream continues when safe.",
+      "Oversized field/physical or quoted-multiline record must fail safely before exceeding the configured bound, not truncate, skip, or wrongly concatenate.",
+      "Disk exhausted, error writing, file collision, duplicate output directory, termination, kill, or failed fsync => no authoritative committed marker; diagnostic best-effort only.",
+      "If commit-marker write fails after files renamed, outputs are not approved; rerun makes a new attempt or refuses overwrite; marker is last and sole sign of success.",
+      "Coverage-first early increments may report expected nonpass for frozen end-to-end tests before features exist; Codex records actual failures rather than skipping frozen acceptance or declaring the early gate passed. No advanced assurance until the complete source scope and frozen suite pass."
+    ],
+    "security_boundaries": [
+      "Never transmit input, output or telemetry externally; process only local paths with read/write permissions, redact stdout/stderr account and amount content.",
+      "Protect staging/results with restrictive umask and directory/file permissions; avoid symlink path traversal and risky input/output aliasing.",
+      "No user-controlled CSV formula sanitization that changes financial data; warn consumers that spreadsheets may execute formula-looking text.",
+      "No real transaction data in generator/test; secrets only in local protected output files and never stack-trace dumps."
+    ]
+  },
+  "codex_tasks": [
+    {
+      "id": "TASK-01",
+      "description": "Repository, packaging and config schema policy: explicit supplied policy, no assumed currency, no implied source fields; create module seam interfaces and baseline core tests.",
+      "depends_on": [],
+      "allowed_files": [
+        "main.py",
+        "src/streaming_csv_parser/__init__.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/models.py",
+        "src/streaming_csv_parser/seams.py",
+        "pyproject.toml"
+      ],
+      "done_when": [
+        "A02_SCHEMA_VALIDATION",
+        "A19_DOCS_OPERATIONS",
+        "A21_COMPONENT_SEPARATION",
+        "A24_BATCH_CONFIG"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-02",
+      "description": "Implement bounded binary/text input streaming, on-the-fly gzip, CSV dialect strict parsing, physical/logical line and bounded record capture. Never read whole file.",
+      "depends_on": [
+        "TASK-01"
+      ],
+      "allowed_files": [
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/csv_stream.py"
+      ],
+      "done_when": [
+        "A01_STREAM_MEMORY",
+        "A03_CSV_DIALECT",
+        "A07_CORRUPT_GZIP_FATAL",
+        "A14_RECORD_LIMITS"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-03",
+      "description": "Implement configured deterministic validator and exact Decimal/integer precision aggregate without floats, no implicit renormalization and no record deduplication.",
+      "depends_on": [
+        "TASK-02"
+      ],
+      "allowed_files": [
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/accounting.py"
+      ],
+      "done_when": [
+        "A02_SCHEMA_VALIDATION",
+        "A04_EXACT_DECIMAL",
+        "A25_VALUES_NO_NORMALIZATION",
+        "A23_INCORRECT_HEADER"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-04",
+      "description": "Classify recoverable and fatal errors, provenance/record capture, stable reason codes; do not resync malformed quotes.",
+      "depends_on": [
+        "TASK-03"
+      ],
+      "allowed_files": [
+        "src/streaming_csv_parser/errors.py",
+        "src/streaming_csv_parser/orchestrator.py"
+      ],
+      "done_when": [
+        "A05_BAD_ROW_CONTINUE",
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A26_REJECTION_PROVENANCE"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-05",
+      "description": "Build streaming output writers with isolated staging, stable csv schemas and final commitment marker only after durable checks; use file and writer dependency seams.",
+      "depends_on": [
+        "TASK-04"
+      ],
+      "allowed_files": [
+        "src/streaming_csv_parser/writer.py",
+        "src/streaming_csv_parser/commit.py"
+      ],
+      "done_when": [
+        "A09_WRITE_FAILURE",
+        "A10_INTERRUPTED_RUN",
+        "A11_RERUN_IDEMPOTENCE",
+        "A16_ARTIFACT_COMMIT"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-06",
+      "description": "Integrate report JSON, invariant checks, counts and rate calculations, full-file PARTIAL vs fatal FAILED statuses.",
+      "depends_on": [
+        "TASK-05"
+      ],
+      "allowed_files": [
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/orchestrator.py"
+      ],
+      "done_when": [
+        "A15_RECONCILE_SUMMARY",
+        "A27_PARTIAL_STATE"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-07",
+      "description": "Complete main.py command-line with schema/record/batch settings, locally-only progress, sanitized errors and documented status codes.",
+      "depends_on": [
+        "TASK-06"
+      ],
+      "allowed_files": [
+        "main.py",
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/diagnostics.py"
+      ],
+      "done_when": [
+        "A12_CLI_UNATTENDED",
+        "A13_PROGRESS_PRIVACY",
+        "A20_SECURITY_LOCAL"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-08",
+      "description": "Implement synthetic data generator with deterministic reference counts and independently precomputed money sums; never customer data.",
+      "depends_on": [
+        "TASK-03"
+      ],
+      "allowed_files": [
+        "tools/generate_synthetic.py"
+      ],
+      "done_when": [
+        "A17_SYNTHETIC_GENERATOR"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-09",
+      "description": "Complete meaningful unit/integration cases and targeted no-mock seams; DO NOT edit sealed tests. Run coverage gate during every production increment.",
+      "depends_on": [
+        "TASK-07",
+        "TASK-08"
+      ],
+      "allowed_files": [
+        "tests/test_core_units.py",
+        "tests/test_integration_edges.py",
+        "tests/test_writer_failure_seams.py",
+        "tests/test_config_validation.py"
+      ],
+      "done_when": [
+        "A18_BENCHMARKS",
+        "A22_ACCEPTANCE_GATE",
+        "A21_COMPONENT_SEPARATION"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-10",
+      "description": "Only after recorded 100% first-party line gate, perform selected Feynman, Hypothesis/stateful, differential fuzz, mutation, fault injection, security and clean install checks with genuine logs.",
+      "depends_on": [
+        "TASK-09"
+      ],
+      "allowed_files": [
+        "tests/test_properties.py",
+        "tests/test_model_correspondence.py",
+        "tools/assurance_campaign.py",
+        "evidence/advanced_verification.json"
+      ],
+      "done_when": [
+        "A22_ACCEPTANCE_GATE",
+        "A04_EXACT_DECIMAL",
+        "A08_EMPTY_HEADER"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-11",
+      "description": "Run measured progressive and target 100GB plus >=150GB Linux 8GB benchmark with raw peak RSS evidence, document any unavailable physical environment as UNVERIFIED not PASS.",
+      "depends_on": [
+        "TASK-10"
+      ],
+      "allowed_files": [
+        "tools/benchmark.py",
+        "evidence/benchmarks.json",
+        "docs/benchmarks.md"
+      ],
+      "done_when": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    },
+    {
+      "id": "TASK-12",
+      "description": "Finalize operational docs, source/fixture hashes, clean wheel/install and return receipt; re-execute independently on exact final archive; leave production approval NOT_GRANTED.",
+      "depends_on": [
+        "TASK-11"
+      ],
+      "allowed_files": [
+        "README.md",
+        "docs/operations.md",
+        "docs/recovery.md",
+        "IMPLEMENTATION_RECEIPT.json",
+        "evidence/coverage_first.json",
+        "evidence/release_recheck.json"
+      ],
+      "done_when": [
+        "A19_DOCS_OPERATIONS",
+        "A22_ACCEPTANCE_GATE"
+      ],
+      "implementation_status": "NOT_STARTED",
+      "scope_note": "Frozen source, assurance and supplied acceptance test files are read-only; write only declared files; dependency and 100%-line gate per increment mandatory."
+    }
+  ],
+  "test_disciplines": [
+    {
+      "name": "Requirements / semantic conformity",
+      "applicability": "REQUIRED",
+      "reason": "Requirements / semantic conformity addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "Immutable XML and frozen independent oracle; application execution requires eventual implementation.",
+      "method": "Bidirectional invariant/trace audit, verify negative constraints and decision ledger",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "source propositions and scenarios",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Static analysis and code quality",
+      "applicability": "REQUIRED",
+      "reason": "Static analysis and code quality addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Compile all, AST audit, type/interface review and no-mock scan",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "Python 3.12 static code",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Deterministic unit tests",
+      "applicability": "REQUIRED",
+      "reason": "Deterministic unit tests addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "unittest with concrete fake file/clock/reader seams; meaningful assertions",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "golden fixture and actual modules",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Integration/contract tests",
+      "applicability": "REQUIRED",
+      "reason": "Integration/contract tests addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Real gzip+CSV and staged writer integration using temporary local directories",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "CSV/gzip actual filesystem",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "End-to-end acceptance",
+      "applicability": "REQUIRED",
+      "reason": "End-to-end acceptance addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Black-box CLI against frozen golden inputs and expected invariants",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "27 acceptance scenarios",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Hypothesis property-based tests",
+      "applicability": "APPLICABLE",
+      "reason": "Hypothesis property-based tests addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Hypothesis generate bounded dialect/data/amounts; shrink failures",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "header, amount and CSV values",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Stateful/protocol tests",
+      "applicability": "APPLICABLE",
+      "reason": "Stateful/protocol tests addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Stateful transitions CREATED->STAGING->COMMITTED/FAILED; kill/replay",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "writer state machine",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Differential fuzzing",
+      "applicability": "APPLICABLE",
+      "reason": "Differential fuzzing addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Compare logical records and reference Decimal ledger against candidate",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "trusted stdlib csv/gzip and independent reference",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Igor's Lean model + correspondence",
+      "applicability": "APPLICABLE",
+      "reason": "Igor's Lean model + correspondence addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Model accepted+rejected and commit invariants; Lean only with actual tool and source correspondence",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "small pure reconciliation model",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Metamorphic testing",
+      "applicability": "APPLICABLE",
+      "reason": "Metamorphic testing addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Batch-size, row-order, gzip vs plain transform preserving logical outputs",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "split/recombine and encoding of CSV",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Mutation testing",
+      "applicability": "APPLICABLE",
+      "reason": "Mutation testing addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Target silent loss, float reintroduction, incorrect status and bypassed commit gates",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "mutate classifier/commit/accounting",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Adversarial fuzzing",
+      "applicability": "APPLICABLE",
+      "reason": "Adversarial fuzzing addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Grammar and byte fuzzing under explicit caps; fail closed",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "malformed CSV/gzip/encoding",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Fault injection",
+      "applicability": "REQUIRED",
+      "reason": "Fault injection addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Handwritten failing-writer seam plus actual tmpfs/permission and SIGTERM",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "disk EIO/ENOSPC, interruption",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "LIGO-inspired independent confirmation",
+      "applicability": "APPLICABLE",
+      "reason": "LIGO-inspired independent confirmation addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Inject known transaction totals and known corrupted gzip; independent count/total confirmation",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "known signals and injected corruption",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Feynman-inspired falsification",
+      "applicability": "APPLICABLE",
+      "reason": "Feynman-inspired falsification addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Attempt counterexamples including many small fields and huge quoted multiline records",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "claims of constant memory/no silent loss",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Security testing",
+      "applicability": "REQUIRED",
+      "reason": "Security testing addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Audit logs/output permissions/local-only operation/untrusted input",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "PII sentinel and filesystem",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Concurrency/race testing",
+      "applicability": "APPLICABLE",
+      "reason": "Concurrency/race testing addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Two subprocesses racing commit must yield at most one authoritative committed result",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "simultaneous runs same output path",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Stress/performance/resource tests",
+      "applicability": "REQUIRED",
+      "reason": "Stress/performance/resource tests addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "RSS sampled and bounded, 100GB then 150GB, steady RSS and throughput/limits",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "progressive 8GB host real files",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Compatibility testing",
+      "applicability": "REQUIRED",
+      "reason": "Compatibility testing addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Run Python 3.12/3.13 across clean Linux hosts where provided",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "Linux and Python 3.12+",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Build/distribution/clean-install reproducibility",
+      "applicability": "REQUIRED",
+      "reason": "Build/distribution/clean-install reproducibility addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "First-party line coverage gate PASS, except independently-authored pre-Codex fixtures may be statically reviewed before application exists.",
+      "method": "Clean venv install with exact dependency/packaging record",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "wheels hashes and offline test",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": null,
+      "observed_count": 0,
+      "evidence_path": null,
+      "evidence_sha256": null,
+      "limitations": [
+        "No target code or target 8 GB / 100-150 GB benchmark was provided; method is planned, not executed."
+      ],
+      "status": "READY_NOT_EXECUTED"
+    },
+    {
+      "name": "Verification-system self-calibration",
+      "applicability": "REQUIRED",
+      "reason": "Verification-system self-calibration addresses financial integrity, bounded memory, non-loss, safe recovery or reproducibility asserted in P23/P62/P80/P149/P175.",
+      "prerequisite": "Immutable XML and frozen independent oracle; application execution requires eventual implementation.",
+      "method": "Positive/negative controls show tests detect dropped rows, incorrect totals, fake commit",
+      "owner_and_independence": "Codex developer executes; separate verification operator independently reruns on exact hash-bound returned ZIP; auditor must review exceptions.",
+      "authoritative_oracle": "Immutable PFContract 4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e and source-derived independent golden reference with disclosed technical choices.",
+      "planned_corpus": "golden and deliberately defective fixtures",
+      "expected_failure_signature": "A missing/duplicated/altered transaction, incorrect totals, false COMMITTED status, memory escalation or measured nonconformance.",
+      "run_id": "pre-codex-oracle-calibration-20261030-01",
+      "observed_count": 2,
+      "evidence_path": "tests/fixtures/ORACLE_CALIBRATION.json",
+      "evidence_sha256": "37cc8d176ef45894e62ebc5a17c9356dcdb08d9406ed9b56b562fe1c551c1685",
+      "limitations": [
+        "Only test-only fixture oracle selfcheck. Does not validate an application, code mutations or independent organization."
+      ],
+      "status": "CHECKED_PRE_IMPLEMENTATION"
+    }
+  ],
+  "open_human_decisions": [],
+  "security_and_privacy": "No network/third-party upload of any financial data or metrics. Local output and staging files with restrictive permissions, safe path validation, symlink defenses, redacted console logs, preserved original field text, bounded memory, anti-partial commit semantics and no external credentials. Production schema/business validation policies must be explicitly provided; never invent supported currencies, timestamp semantics, scale or statuses.",
+  "assumptions_and_limitations": [
+    "No compiler receipt supplied: XML hash verified locally but COMPILE_RELEASED cannot be receipt-attested.",
+    "No existing application source baseline supplied; this is a new-build implementation handoff, not an authorized modification of legacy program.",
+    "The compiled source lists eight generally-present fields but does not define which fields are mandatory, timestamp dialects, supported currencies, precision scales, or transaction-type enums. Runtime requires an explicit versioned schema policy supplied by operators; test-only schema is not live financial policy. No unsupported live transaction is guessed.",
+    "Choosing strict CSV parse failure over guessing a broken quote boundary is a safe technical policy; a nonrecoverable record is not counted as examined unless a full logical record was identified.",
+    "Status and exit mapping 0 SUCCESS, 2 PARTIAL (fully read with rejects), 1 FAILED (incomplete) is a transparent implementation design for scheduled operations, not a quote from the owner source.",
+    "Preference: peak process memory below 512 MB for ordinary files; hard 8GB host compatibility and bounded-growth behavior remain independent acceptance obligations.",
+    "No target code, physical large-file benchmark, production schema config, live dependency stack, Hypothesis campaign or independent organizational audit is available now.",
+    "Offline reference books beyond the contained source index are not supplied; no claims about directly reading them or formal certification.",
+    "Negative fixture controls may be executed pre-Codex but are only oracle/check calibration, never evidence application executes or meets the contract.",
+    "Unimplemented frozen black-box tests may fail in early Codex increments; failures are recorded and must not be hidden or marked PASS. Full coverage gate and frozen tests must pass before advanced assurance."
+  ],
+  "preimplementation_checks": {
+    "executed": [
+      {
+        "run_id": "pre-codex-oracle-calibration-20261030-01",
+        "command": "/opt/pyvenv/bin/python -m unittest discover -s tests -p test_oracle_selfcheck.py -v",
+        "actual_test_count": 2,
+        "result": "PASS",
+        "evidence_path": "tests/fixtures/ORACLE_CALIBRATION.json",
+        "scope": "fixture-only calibration"
+      }
+    ],
+    "not_yet_executable": [
+      "Compiled application implementation not created; all acceptance cases and 21 target methods remain READY_NOT_EXECUTED until Codex returns actual code.",
+      "Large-file host memory/throughput benchmark requires full 8 GB target Linux host and real 100/150 GB synthetic data.",
+      "Final exact returned ZIP recheck requires separately authorized code execution."
+    ]
+  },
+  "source_decision_hierarchy": "PFContract XML required/prohibited clauses outrank developer architecture; preferences recorded separately; developer design fills only unspecified transport/interface details, NEVER owner currency/business semantics. Physical batch-byte and incremental line limits are engineering defenses, not new owner business schema.",
+  "selected_process": "BUILD/HIGH_ASSURANCE; coverage-first incremental unit tests then advanced checks and exact-archive independent verification",
+  "design_decisions": [
+    {
+      "id": "DD01",
+      "choice": "Require explicit operator-supplied schema/config including currency allowlist, timestamp format and required fields; default no business schema",
+      "authority": "Implementation design under T_DESIGN, P58/P60, P66; no business policy invented"
+    },
+    {
+      "id": "DD02",
+      "choice": "Raw field strings preserved, CSV reserialization permitted if logical values unchanged; raw rejected record captured when recoverable under cap",
+      "authority": "P66/P78/P145"
+    },
+    {
+      "id": "DD03",
+      "choice": "Fatal on unrecoverable malformed CSV or failed gzip integrity, never skip bytes to guess next record",
+      "authority": "P74/P80/P84_FATAL/P167"
+    },
+    {
+      "id": "DD04",
+      "choice": "Strict status SUCCESS, PARTIAL for fully read-with-rejections, FAILED for incomplete with CLI codes 0,2,1",
+      "authority": "T_CLI; P137 distinguishes statuses without stipulating numeric codes"
+    },
+    {
+      "id": "DD05",
+      "choice": "A commit marker is published after all checked file writes; no marker means no approved result even if CSV paths exist",
+      "authority": "P84/P84_FATAL/P139"
+    },
+    {
+      "id": "DD06",
+      "choice": "Single-threaded deterministic pipeline first; bounded queues/batch at 10,000 default; config-enforced record bytes",
+      "authority": "P29/P40/P43; correctness before throughput"
+    },
+    {
+      "id": "DD07",
+      "choice": "Limit both total batch bytes and logical record/physical-line bytes; cap policy and CSV fields independently to prevent a 10000-row x 1MB memory blowup",
+      "authority": "P40/P43/P119/P168 and 8 GB Linux environment"
+    },
+    {
+      "id": "DD08",
+      "choice": "Implement chunked input line reader enforcing physical line limit before any newline-delimited line string is materialized",
+      "authority": "P39/P43/P168; gzip and csv.reader do not imply byte-safe oversize detection"
+    }
+  ]
+}

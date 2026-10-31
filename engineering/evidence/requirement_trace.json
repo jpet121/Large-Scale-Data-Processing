@@ -1,0 +1,1501 @@
+{
+  "acceptance": {
+    "A01_STREAM_MEMORY": {
+      "files": [
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/config.py"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    "A02_SCHEMA_VALIDATION": {
+      "files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/validation.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A03_CSV_DIALECT": {
+      "files": [
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/csv_stream.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A04_EXACT_DECIMAL": {
+      "files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/validation.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A05_BAD_ROW_CONTINUE": {
+      "files": [
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A06_UNTRUSTED_CSV_FATAL": {
+      "files": [
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A07_CORRUPT_GZIP_FATAL": {
+      "files": [
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/orchestrator.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A08_EMPTY_HEADER": {
+      "files": [
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A09_WRITE_FAILURE": {
+      "files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/writer.py",
+        "src/streaming_csv_parser/orchestrator.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A10_INTERRUPTED_RUN": {
+      "files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/orchestrator.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A11_RERUN_IDEMPOTENCE": {
+      "files": [
+        "src/streaming_csv_parser/commit.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A12_CLI_UNATTENDED": {
+      "files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/config.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A13_PROGRESS_PRIVACY": {
+      "files": [
+        "src/streaming_csv_parser/diagnostics.py",
+        "src/streaming_csv_parser/cli.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A14_RECORD_LIMITS": {
+      "files": [
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/config.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A15_RECONCILE_SUMMARY": {
+      "files": [
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/accounting.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A16_ARTIFACT_COMMIT": {
+      "files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A17_SYNTHETIC_GENERATOR": {
+      "files": [
+        "tools/generate_synthetic.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A18_BENCHMARKS": {
+      "files": [
+        "tools/benchmark.py",
+        "docs/benchmarks.md"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    "A19_DOCS_OPERATIONS": {
+      "files": [
+        "src/streaming_csv_parser/cli.py",
+        "docs/operations.md",
+        "docs/recovery.md",
+        "pyproject.toml"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A20_SECURITY_LOCAL": {
+      "files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/diagnostics.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A21_COMPONENT_SEPARATION": {
+      "files": [
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py",
+        "src/streaming_csv_parser/seams.py",
+        "src/streaming_csv_parser/models.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A22_ACCEPTANCE_GATE": {
+      "files": [
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/commit.py"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    "A23_INCORRECT_HEADER": {
+      "files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/validation.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A24_BATCH_CONFIG": {
+      "files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/orchestrator.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A25_VALUES_NO_NORMALIZATION": {
+      "files": [
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A26_REJECTION_PROVENANCE": {
+      "files": [
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    "A27_PARTIAL_STATE": {
+      "files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/orchestrator.py"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    }
+  },
+  "requirements": [
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P21",
+      "source_proposition_ids": [
+        "P21"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P23",
+      "source_proposition_ids": [
+        "P23"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A21_COMPONENT_SEPARATION"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/models.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/seams.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P27",
+      "source_proposition_ids": [
+        "P27"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P31",
+      "source_proposition_ids": [
+        "P31"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P37",
+      "source_proposition_ids": [
+        "P37"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P38",
+      "source_proposition_ids": [
+        "P38"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P39",
+      "source_proposition_ids": [
+        "P39"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A24_BATCH_CONFIG"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P41",
+      "source_proposition_ids": [
+        "P41"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A07_CORRUPT_GZIP_FATAL"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P42",
+      "source_proposition_ids": [
+        "P42"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A14_RECORD_LIMITS",
+        "A24_BATCH_CONFIG"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P43",
+      "source_proposition_ids": [
+        "P43"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A24_BATCH_CONFIG"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P40",
+      "source_proposition_ids": [
+        "P40"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A23_INCORRECT_HEADER"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/validation.py"
+      ],
+      "requirement_id": "R-P58",
+      "source_proposition_ids": [
+        "P58"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A05_BAD_ROW_CONTINUE",
+        "A08_EMPTY_HEADER",
+        "A23_INCORRECT_HEADER"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P60",
+      "source_proposition_ids": [
+        "P60"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A04_EXACT_DECIMAL"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/validation.py"
+      ],
+      "requirement_id": "R-P62",
+      "source_proposition_ids": [
+        "P62"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A03_CSV_DIALECT"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P64",
+      "source_proposition_ids": [
+        "P64"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A23_INCORRECT_HEADER",
+        "A25_VALUES_NO_NORMALIZATION"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P66",
+      "source_proposition_ids": [
+        "P66"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A27_PARTIAL_STATE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P74",
+      "source_proposition_ids": [
+        "P74"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A05_BAD_ROW_CONTINUE",
+        "A27_PARTIAL_STATE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P76",
+      "source_proposition_ids": [
+        "P76"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A05_BAD_ROW_CONTINUE",
+        "A26_REJECTION_PROVENANCE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P78",
+      "source_proposition_ids": [
+        "P78"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A07_CORRUPT_GZIP_FATAL",
+        "A09_WRITE_FAILURE",
+        "A27_PARTIAL_STATE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P80",
+      "source_proposition_ids": [
+        "P80"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A09_WRITE_FAILURE",
+        "A10_INTERRUPTED_RUN",
+        "A27_PARTIAL_STATE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P82",
+      "source_proposition_ids": [
+        "P82"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A09_WRITE_FAILURE",
+        "A10_INTERRUPTED_RUN",
+        "A16_ARTIFACT_COMMIT",
+        "A27_PARTIAL_STATE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P84",
+      "source_proposition_ids": [
+        "P84"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A07_CORRUPT_GZIP_FATAL",
+        "A16_ARTIFACT_COMMIT"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P84_FATAL",
+      "source_proposition_ids": [
+        "P84_FATAL"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A16_ARTIFACT_COMMIT"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P90",
+      "source_proposition_ids": [
+        "P90"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A16_ARTIFACT_COMMIT",
+        "A26_REJECTION_PROVENANCE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P92",
+      "source_proposition_ids": [
+        "P92"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/report.py"
+      ],
+      "requirement_id": "R-P96",
+      "source_proposition_ids": [
+        "P96"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/report.py"
+      ],
+      "requirement_id": "R-P97",
+      "source_proposition_ids": [
+        "P97"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P98",
+      "source_proposition_ids": [
+        "P98"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P99",
+      "source_proposition_ids": [
+        "P99"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P100",
+      "source_proposition_ids": [
+        "P100"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P101",
+      "source_proposition_ids": [
+        "P101"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A04_EXACT_DECIMAL",
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/validation.py"
+      ],
+      "requirement_id": "R-P102",
+      "source_proposition_ids": [
+        "P102"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/report.py"
+      ],
+      "requirement_id": "R-P103",
+      "source_proposition_ids": [
+        "P103"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/report.py"
+      ],
+      "requirement_id": "R-P104",
+      "source_proposition_ids": [
+        "P104"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A15_RECONCILE_SUMMARY",
+        "A27_PARTIAL_STATE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py"
+      ],
+      "requirement_id": "R-P105",
+      "source_proposition_ids": [
+        "P105"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A16_ARTIFACT_COMMIT"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P107",
+      "source_proposition_ids": [
+        "P107"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P113",
+      "source_proposition_ids": [
+        "P113"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P119",
+      "source_proposition_ids": [
+        "P119"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P121",
+      "source_proposition_ids": [
+        "P121"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ],
+      "implementation_files": [
+        "docs/benchmarks.md",
+        "tools/benchmark.py"
+      ],
+      "requirement_id": "R-P123",
+      "source_proposition_ids": [
+        "P123"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/config.py"
+      ],
+      "requirement_id": "R-P127",
+      "source_proposition_ids": [
+        "P127"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED",
+        "A14_RECORD_LIMITS",
+        "A24_BATCH_CONFIG"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P133",
+      "source_proposition_ids": [
+        "P133"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED",
+        "A13_PROGRESS_PRIVACY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/diagnostics.py"
+      ],
+      "requirement_id": "R-P135",
+      "source_proposition_ids": [
+        "P135"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED",
+        "A27_PARTIAL_STATE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py"
+      ],
+      "requirement_id": "R-P137",
+      "source_proposition_ids": [
+        "P137"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A10_INTERRUPTED_RUN",
+        "A11_RERUN_IDEMPOTENCE",
+        "A16_ARTIFACT_COMMIT"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P139",
+      "source_proposition_ids": [
+        "P139"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A03_CSV_DIALECT",
+        "A04_EXACT_DECIMAL",
+        "A25_VALUES_NO_NORMALIZATION"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P145",
+      "source_proposition_ids": [
+        "P145"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A03_CSV_DIALECT",
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A11_RERUN_IDEMPOTENCE",
+        "A14_RECORD_LIMITS",
+        "A25_VALUES_NO_NORMALIZATION",
+        "A26_REJECTION_PROVENANCE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P147",
+      "source_proposition_ids": [
+        "P147"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A08_EMPTY_HEADER",
+        "A15_RECONCILE_SUMMARY",
+        "A25_VALUES_NO_NORMALIZATION"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P149",
+      "source_proposition_ids": [
+        "P149"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A13_PROGRESS_PRIVACY",
+        "A20_SECURITY_LOCAL"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/diagnostics.py"
+      ],
+      "requirement_id": "R-P151",
+      "source_proposition_ids": [
+        "P151"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A13_PROGRESS_PRIVACY",
+        "A20_SECURITY_LOCAL"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/diagnostics.py"
+      ],
+      "requirement_id": "R-P153",
+      "source_proposition_ids": [
+        "P153"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A18_BENCHMARKS",
+        "A22_ACCEPTANCE_GATE"
+      ],
+      "implementation_files": [
+        "docs/benchmarks.md",
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/report.py",
+        "tools/benchmark.py"
+      ],
+      "requirement_id": "R-P157",
+      "source_proposition_ids": [
+        "P157"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ],
+      "implementation_files": [
+        "docs/benchmarks.md",
+        "tools/benchmark.py"
+      ],
+      "requirement_id": "R-P161",
+      "source_proposition_ids": [
+        "P161"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ],
+      "implementation_files": [
+        "docs/benchmarks.md",
+        "tools/benchmark.py"
+      ],
+      "requirement_id": "R-P162",
+      "source_proposition_ids": [
+        "P162"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ],
+      "implementation_files": [
+        "docs/benchmarks.md",
+        "tools/benchmark.py"
+      ],
+      "requirement_id": "R-P163",
+      "source_proposition_ids": [
+        "P163"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A05_BAD_ROW_CONTINUE",
+        "A06_UNTRUSTED_CSV_FATAL",
+        "A23_INCORRECT_HEADER"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P164",
+      "source_proposition_ids": [
+        "P164"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A03_CSV_DIALECT"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P165",
+      "source_proposition_ids": [
+        "P165"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A08_EMPTY_HEADER"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py"
+      ],
+      "requirement_id": "R-P166",
+      "source_proposition_ids": [
+        "P166"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A07_CORRUPT_GZIP_FATAL"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P167",
+      "source_proposition_ids": [
+        "P167"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A14_RECORD_LIMITS"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P168",
+      "source_proposition_ids": [
+        "P168"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A09_WRITE_FAILURE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P169",
+      "source_proposition_ids": [
+        "P169"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A10_INTERRUPTED_RUN",
+        "A11_RERUN_IDEMPOTENCE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/orchestrator.py"
+      ],
+      "requirement_id": "R-P170",
+      "source_proposition_ids": [
+        "P170"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A04_EXACT_DECIMAL"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/accounting.py",
+        "src/streaming_csv_parser/validation.py"
+      ],
+      "requirement_id": "R-P171",
+      "source_proposition_ids": [
+        "P171"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS"
+      ],
+      "implementation_files": [
+        "docs/benchmarks.md",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py",
+        "tools/benchmark.py"
+      ],
+      "requirement_id": "R-P173",
+      "source_proposition_ids": [
+        "P173"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS",
+        "A22_ACCEPTANCE_GATE"
+      ],
+      "implementation_files": [
+        "docs/benchmarks.md",
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/report.py",
+        "tools/benchmark.py"
+      ],
+      "requirement_id": "R-P175",
+      "source_proposition_ids": [
+        "P175"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A02_SCHEMA_VALIDATION",
+        "A09_WRITE_FAILURE",
+        "A22_ACCEPTANCE_GATE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/orchestrator.py",
+        "src/streaming_csv_parser/report.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P177",
+      "source_proposition_ids": [
+        "P177"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS",
+        "A21_COMPONENT_SEPARATION"
+      ],
+      "implementation_files": [
+        "docs/operations.md",
+        "docs/recovery.md",
+        "pyproject.toml",
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/models.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/seams.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P183",
+      "source_proposition_ids": [
+        "P183"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS",
+        "A21_COMPONENT_SEPARATION"
+      ],
+      "implementation_files": [
+        "docs/operations.md",
+        "docs/recovery.md",
+        "pyproject.toml",
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/models.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/seams.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P184",
+      "source_proposition_ids": [
+        "P184"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A12_CLI_UNATTENDED"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/cli.py",
+        "src/streaming_csv_parser/config.py"
+      ],
+      "requirement_id": "R-P185",
+      "source_proposition_ids": [
+        "P185"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A21_COMPONENT_SEPARATION"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/models.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/seams.py",
+        "src/streaming_csv_parser/validation.py",
+        "src/streaming_csv_parser/writer.py"
+      ],
+      "requirement_id": "R-P186",
+      "source_proposition_ids": [
+        "P186"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A17_SYNTHETIC_GENERATOR"
+      ],
+      "implementation_files": [
+        "tools/generate_synthetic.py"
+      ],
+      "requirement_id": "R-P187",
+      "source_proposition_ids": [
+        "P187"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A18_BENCHMARKS"
+      ],
+      "implementation_files": [
+        "docs/benchmarks.md",
+        "tools/benchmark.py"
+      ],
+      "requirement_id": "R-P188",
+      "source_proposition_ids": [
+        "P188"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS"
+      ],
+      "implementation_files": [
+        "docs/operations.md",
+        "docs/recovery.md",
+        "pyproject.toml",
+        "src/streaming_csv_parser/cli.py"
+      ],
+      "requirement_id": "R-P189",
+      "source_proposition_ids": [
+        "P189"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A19_DOCS_OPERATIONS"
+      ],
+      "implementation_files": [
+        "docs/operations.md",
+        "docs/recovery.md",
+        "pyproject.toml",
+        "src/streaming_csv_parser/cli.py"
+      ],
+      "requirement_id": "R-P190",
+      "source_proposition_ids": [
+        "P190"
+      ],
+      "status": "PASS_IN_LOCAL_TEST_SCOPE"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS"
+      ],
+      "implementation_files": [
+        "docs/benchmarks.md",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py",
+        "tools/benchmark.py"
+      ],
+      "requirement_id": "R-P194",
+      "source_proposition_ids": [
+        "P194"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A18_BENCHMARKS"
+      ],
+      "implementation_files": [
+        "docs/benchmarks.md",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py",
+        "tools/benchmark.py"
+      ],
+      "requirement_id": "R-P194_ENV",
+      "source_proposition_ids": [
+        "P194_ENV"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY",
+        "A22_ACCEPTANCE_GATE"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/commit.py",
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py",
+        "src/streaming_csv_parser/report.py"
+      ],
+      "requirement_id": "R-P196",
+      "source_proposition_ids": [
+        "P196"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "acceptance_ids": [
+        "A01_STREAM_MEMORY"
+      ],
+      "implementation_files": [
+        "src/streaming_csv_parser/config.py",
+        "src/streaming_csv_parser/csv_stream.py",
+        "src/streaming_csv_parser/reader.py"
+      ],
+      "requirement_id": "R-P198",
+      "source_proposition_ids": [
+        "P198"
+      ],
+      "status": "PARTIAL_TARGET_ACCEPTANCE_REQUIRED"
+    }
+  ],
+  "scope": "Bidirectional source-to-file mapping; local tests are not production acceptance."
+}
