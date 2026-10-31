@@ -1,0 +1,24 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+*.egg-info/
+build/
+dist/
+
+# Generated local workloads and outputs
+local-runs/
+coverage_result.json
+runs/
+*.csv.tmp
+*.gz.tmp
+
+# Avoid uploading bulk financial transaction inputs
+*.100gb.csv
+*.150gb.csv

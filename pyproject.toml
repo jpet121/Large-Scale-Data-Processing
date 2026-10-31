@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streaming-csv-parser"
+version = "0.1.0"
+requires-python = ">=3.12"
+description = "Local bounded streaming transaction validation"
+
+[project.scripts]
+streaming-csv-parser = "streaming_csv_parser.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+verification = [
+  "coverage==7.13.4",
+  "hypothesis==6.151.9",
+  "build==1.4.0",
+  "setuptools==84.0.0",
+  "sortedcontainers==2.4.0",
+  "packaging==26.3",
+  "pyproject_hooks==1.3.3",
+]
