@@ -14,7 +14,7 @@
 
 **Names and compatibility:** **Large-Scale Data Processing** is the portfolio-facing repository title. **Streaming CSV Transaction Parser** is the application's technical name. This documentation does not rename application modules, executable commands, or release archives.
 
-[See the results](#measured-performance-at-scale) · [Understand the design](#how-it-works) · [Review the testing](#how-the-engineering-was-verified) · [Try it yourself](#try-it-yourself-ubuntu-or-wsl2) · [Read the requirements](Project%20Requirements.MD)
+[See the results](#measured-performance-at-scale) · [Understand the design](#how-it-works) · [Review the testing](#how-the-engineering-was-verified) · [Try it yourself](#try-it-yourself-ubuntu-or-wsl2) · [Read the requirements](Streaming%20CSV%20Transaction%20Parser-Project%20Requirements%20%26%20Acceptance%20Criteria.MD)
 
 ## At a glance
 
@@ -34,7 +34,7 @@ The requirements called for correct transaction accounting, predictable failure 
 
 The central problem is straightforward: **file size should increase processing time, not cause memory usage to grow until the system crashes.** Correctness matters as much as speed. A file is not successfully processed if records are silently omitted, financial values change, or partially written output is mistaken for a complete result.
 
-The original client-style brief is retained as [Project Requirements](Streaming CSV Transaction Parser-Project Requirements & Acceptance Criteria.MD). It is a portfolio scenario, **not a claim of a real client engagement**.
+The original client-style brief is retained as [Project Requirements](Streaming%20CSV%20Transaction%20Parser-Project%20Requirements%20%26%20Acceptance%20Criteria.MD). It is a portfolio scenario, **not a claim of a real client engagement**.
 
 ## How it works
 
@@ -159,7 +159,7 @@ The mixed fixture deliberately includes records that may be rejected. Inspect th
 
 | Resource | Purpose |
 | --- | --- |
-| [Project Requirements](Project%20Requirements.MD) | Simulated client problem, technical constraints, deliverables, and acceptance criteria. |
+| [Project Requirements](Streaming%20CSV%20Transaction%20Parser-Project%20Requirements%20%26%20Acceptance%20Criteria.MD) | Simulated client problem, technical constraints, deliverables, and acceptance criteria. |
 | `PEHAVOS_FINAL_INDEPENDENT_VERIFICATION_REPORT.md` | Independent audit conclusions, recorded benchmarks, evidence hashes, and limitations (to be included with release materials). |
 | Implementation/release ZIP | Source, tests, CLI, synthetic fixtures, and packaged application (published separately). |
 | `PEHAVOS_TEST_EVIDENCE_TO_RETURN.zip` | Scale receipts and benchmark evidence reviewed during the final audit (published separately). |
