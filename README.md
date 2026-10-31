@@ -168,7 +168,7 @@ The mixed fixture deliberately includes records that may be rejected. Inspect th
 
 ### Limitations that matter
 
-- The 100 GB and 150 GB workloads ran on **Ubuntu/WSL2 with an approximately 8 GB memory configuration**—not a separately certified physical 8 GB Linux server.
+- The 100 GB and 150 GB workloads ran on **Ubuntu/WSL2 with an approximately 8 GB memory configuration**-not a separately certified physical 8 GB Linux server.
 - The scale files contained **synthetic data**, not actual payment processing records. The test schema (`TEST_ONLY_SCHEMA.json`) is not approved business policy.
 - Large-byte workloads and large-row-count workloads are separate demonstrations; no claim is made that the 150 GB workload contained hundreds of millions of transactions.
 - The independent audit validated the returned hashes, receipts, benchmark reports, and test rerun. It did not independently reread or rehash the original 100 GB and 150 GB raw files.
@@ -176,4 +176,4 @@ The mixed fixture deliberately includes records that may be rejected. Inspect th
 
 ---
 
-**Focus:** Building reliable, inspectable software with clear requirements, memory-bounded algorithms, exact financial accounting, meaningful failure behavior, reproducible verification, and accountable human decisions—even when AI assists in the development process.
+**Focus:** Building reliable, inspectable software with clear requirements, memory-bounded algorithms, exact financial accounting, meaningful failure behavior, reproducible verification, and accountable human decisions-even when AI assists in the development process.
