@@ -1,0 +1,20 @@
+{
+  "contract_sha256": "4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e",
+  "source_propositions": [
+    "P62",
+    "P64",
+    "P66",
+    "P78",
+    "P80",
+    "P84",
+    "P98",
+    "P99",
+    "P100",
+    "P102",
+    "P145",
+    "P147",
+    "P149"
+  ],
+  "test_only_schema_never_authorizes_production_policy": true,
+  "assumption": "Exact filenames, JSON keys, and numeric CLI codes are documented PEHAVOS design choices, not asserted owner claims."
+}

@@ -1,0 +1,24 @@
+{
+  "examined_count": 5,
+  "accepted_count": 3,
+  "rejected_count": 2,
+  "accepted_totals_by_currency": {
+    "USD": "0.30",
+    "EUR": "8.00"
+  },
+  "status": "PARTIAL",
+  "complete": true,
+  "error_codes": {
+    "INVALID_AMOUNT": 1,
+    "UNSUPPORTED_CURRENCY": 1
+  },
+  "accepted_ids": [
+    "0001",
+    "0002",
+    "0003"
+  ],
+  "rejected_ids": [
+    "0004",
+    "0005"
+  ]
+}

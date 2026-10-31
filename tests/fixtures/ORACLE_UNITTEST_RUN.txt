@@ -1,0 +1,8 @@
+
+test_negative_control_detects_dropped_row_and_float_rounding (test_oracle_selfcheck.GoldenReferenceCalibration.test_negative_control_detects_dropped_row_and_float_rounding) ... ok
+test_positive_control (test_oracle_selfcheck.GoldenReferenceCalibration.test_positive_control) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK

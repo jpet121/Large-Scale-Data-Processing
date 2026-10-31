@@ -1,0 +1,7 @@
+transaction_id,account_id,timestamp,type,amount,currency,status,processor_reference
+0001,0012,2026-10-30T12:00:00+0000,PAYMENT,0.10,USD,SETTLED,"processor, east"
+0002,0012,2026-10-30T12:01:00+0000,PAYMENT,0.20,USD,SETTLED,"processor ""west""
+second line"
+0003,0099,2026-10-30T12:02:00+0000,REFUND,8.00,EUR,SETTLED,ref-three
+0004,0044,2026-10-30T12:03:00+0000,PAYMENT,garbage,USD,SETTLED,ref-four
+0005,0055,2026-10-30T12:04:00+0000,PAYMENT,5.00,DOG,SETTLED,ref-five

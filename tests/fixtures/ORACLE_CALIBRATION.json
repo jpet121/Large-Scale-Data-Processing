@@ -1,0 +1,11 @@
+{
+  "run_id": "pre-codex-oracle-calibration-20261030-01",
+  "command": "/opt/pyvenv/bin/python -m unittest discover -s tests -p test_oracle_selfcheck.py -v",
+  "working_dir": "project root",
+  "return_code": 0,
+  "tests_observed": 2,
+  "test_log_file": "tests/fixtures/ORACLE_UNITTEST_RUN.txt",
+  "test_log_sha256": "cbcc0936f0d278e7f54136b3f62199615934d4ff421e8ff45e69d45ee89db57d",
+  "scope": "independent golden fixture selfcheck and deliberately broken-count/float reference detection; NOT application execution",
+  "application_executed": false
+}

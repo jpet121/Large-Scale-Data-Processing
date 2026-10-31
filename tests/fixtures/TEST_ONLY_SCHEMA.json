@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "columns": [
+    "transaction_id",
+    "account_id",
+    "timestamp",
+    "type",
+    "amount",
+    "currency",
+    "status",
+    "processor_reference"
+  ],
+  "required_fields": [
+    "transaction_id",
+    "account_id",
+    "timestamp",
+    "type",
+    "amount",
+    "currency",
+    "status",
+    "processor_reference"
+  ],
+  "timestamp_format": "%Y-%m-%dT%H:%M:%S%z",
+  "allowed_currencies": [
+    "USD",
+    "EUR"
+  ],
+  "decimal_policy": {
+    "allow_sign": true,
+    "allow_exponent": false,
+    "allow_nonfinite": false,
+    "max_digits": 30,
+    "max_scale": 8
+  },
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "quotechar": "\"",
+  "doublequote": true,
+  "strict_csv": true
+}
