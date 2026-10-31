@@ -1,0 +1,146 @@
+{
+  "child_exit_code": 0,
+  "command": [
+    "/usr/bin/python3",
+    "-c",
+    "import resource,runpy; resource.setrlimit(resource.RLIMIT_AS, (1073741824,)*2); runpy.run_path('/home/jpet/pehavos-lab/workspace/application/main.py',run_name='__main__')",
+    "--input",
+    "/mnt/e/PEHAVOS_LAB/runs/smoke_16mib/synthetic.csv",
+    "--output",
+    "/mnt/e/PEHAVOS_LAB/runs/smoke_16mib/result",
+    "--schema",
+    "/home/jpet/pehavos-lab/workspace/application/tests/fixtures/TEST_ONLY_SCHEMA.json"
+  ],
+  "complete": true,
+  "diagnostic": "FINALIZING examined=511\n",
+  "duration_seconds": 1.216602426999998,
+  "host_memory_kib": 8133428,
+  "input_sha256": "acf6aec1735ca3fa5809aed6d332551bc6e24f9352d0fbc1f6c2e9647aaeb757",
+  "input_size_bytes": 16791544,
+  "memory_limit_kind": "RLIMIT_AS virtual address-space cap, not host RAM",
+  "memory_limit_mb": 1024,
+  "peak_rss_kib": 21284,
+  "platform": "linux",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "rss_sample_count": 24,
+  "rss_samples": [
+    {
+      "elapsed_seconds": 0.006701713999973435,
+      "rss_kib": 16
+    },
+    {
+      "elapsed_seconds": 0.05708246599999711,
+      "rss_kib": 12632
+    },
+    {
+      "elapsed_seconds": 0.10745505599993521,
+      "rss_kib": 19304
+    },
+    {
+      "elapsed_seconds": 0.15787661399997432,
+      "rss_kib": 20248
+    },
+    {
+      "elapsed_seconds": 0.20825115699994967,
+      "rss_kib": 20248
+    },
+    {
+      "elapsed_seconds": 0.25863779499991324,
+      "rss_kib": 20248
+    },
+    {
+      "elapsed_seconds": 0.30902692500001194,
+      "rss_kib": 20248
+    },
+    {
+      "elapsed_seconds": 0.35943452300000445,
+      "rss_kib": 20248
+    },
+    {
+      "elapsed_seconds": 0.409836180999946,
+      "rss_kib": 20248
+    },
+    {
+      "elapsed_seconds": 0.4602538240000058,
+      "rss_kib": 20248
+    },
+    {
+      "elapsed_seconds": 0.5106331690000161,
+      "rss_kib": 20252
+    },
+    {
+      "elapsed_seconds": 0.5609161059999224,
+      "rss_kib": 20252
+    },
+    {
+      "elapsed_seconds": 0.6112150769999971,
+      "rss_kib": 20252
+    },
+    {
+      "elapsed_seconds": 0.6615041509999173,
+      "rss_kib": 20252
+    },
+    {
+      "elapsed_seconds": 0.7121806419999075,
+      "rss_kib": 20256
+    },
+    {
+      "elapsed_seconds": 0.7625873549999369,
+      "rss_kib": 20256
+    },
+    {
+      "elapsed_seconds": 0.8130702059999066,
+      "rss_kib": 20256
+    },
+    {
+      "elapsed_seconds": 0.8635037279999551,
+      "rss_kib": 20256
+    },
+    {
+      "elapsed_seconds": 0.914032405999933,
+      "rss_kib": 20256
+    },
+    {
+      "elapsed_seconds": 0.9644132459999355,
+      "rss_kib": 20256
+    },
+    {
+      "elapsed_seconds": 1.0148337869999295,
+      "rss_kib": 20256
+    },
+    {
+      "elapsed_seconds": 1.065208126000016,
+      "rss_kib": 20256
+    },
+    {
+      "elapsed_seconds": 1.1156244549999883,
+      "rss_kib": 20256
+    },
+    {
+      "elapsed_seconds": 1.1660029099999747,
+      "rss_kib": 20124
+    }
+  ],
+  "sample_retention": "latest 4096 samples",
+  "summary": {
+    "accepted_count": 511,
+    "accepted_totals_by_currency": {
+      "USD": "51.10"
+    },
+    "complete": true,
+    "completed_at_utc": "2026-10-31T01:29:48.022458+00:00",
+    "duration_seconds": 0.5778871479999452,
+    "examined_count": 511,
+    "format_version": 1,
+    "input_filename": "synthetic.csv",
+    "input_inode": 281474976710703,
+    "input_mtime_ns": 1793410187063696000,
+    "input_size_bytes": 16791544,
+    "policy_sha256": "71aeb22a94573e626193a7e3310ccefd4105b5e76ed188529dbf466e3a98ad87",
+    "rejected_count": 0,
+    "rejection_counts_by_type": {},
+    "started_at_utc": "2026-10-31T01:29:47.444553+00:00",
+    "status": "SUCCESS",
+    "throughput_records_per_second": 884.2556920820264
+  }
+}

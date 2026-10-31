@@ -1,0 +1,113 @@
+{
+  "audit_date_utc": "2026-10-31",
+  "corrected_v2_implementation_sha256": "6dd8b022d758a2fdf1cbca19212ddc5cc8c921029ba709dc69aec01bbf27c22b",
+  "disposition": {
+    "original_100gb_150gb_scale_requirement_under_wsl2": "PASS_RECEIPT_VERIFIED",
+    "physical_8gb_linux_server_certification": "NOT_GRANTED",
+    "portfolio_publication": "READY_WITH_EXPLICIT_LIMITATIONS",
+    "production_release": "HOLD_HUMAN_APPROVAL_AND_PRODUCTION_POLICY",
+    "raw_100gb_150gb_files_independently_rehashed_in_current_environment": false
+  },
+  "evidence_archive": {
+    "manifest_members_verified": 18,
+    "sha256": "a486f2437d933aa9145f5e70668a01734c6928a9da9b6a819aabf10a0f3a3931",
+    "zip_testzip": "PASS"
+  },
+  "evidence_limitations": [
+    "The uploaded archive contains JSON records and their checksums, not the 100 GB and 150 GB raw files; their input/output SHA-256 digests were computed and asserted by the test harness, but not recalculated by this auditor from the underlying disk files.",
+    "The Linux kernel ran under WSL2, with approximately 8 GB reported memory and no swap, not independently attested dedicated physical 8 GB Linux hardware.",
+    "Scale cases use 128 KiB padding per synthetic row. 150 GB input contains 1,143,607 rows; a separate 10,000,000-row test passed. Hundreds of millions of rows are not demonstrated.",
+    "Scale cases contain valid synthetic transactions; malformed inputs, gzip failures and other negative scenarios are exercised primarily by the frozen smaller tests.",
+    "The TEST_ONLY_SCHEMA fixture has not been approved as a production financial schema, and no human release authorization or institutionally independent hardware witness is evidenced."
+  ],
+  "frozen_tests": {
+    "exclusions": 0,
+    "fresh_executed_as_unprivileged_user": true,
+    "fresh_first_party_line_coverage": 100.0,
+    "fresh_measured_branch_coverage": 100.0,
+    "fresh_tests_returncode": 0,
+    "independent_fresh_linux_python_3_13_executed": 41,
+    "missing_first_party_files": [],
+    "ubuntu_24_04_wsl2_reported": 41
+  },
+  "original_specification_sha256": "4ead0b4d51a4ce04a3c5d3dc5ce447117337ce8b8e0add589fccba73859ed78e",
+  "receipt_cross_checks_errors": [],
+  "report_type": "PEHAVOS_INDEPENDENT_FINAL_SCALE_EVIDENCE_AUDIT",
+  "source_bundle_integrity": {
+    "application_manifest_members_verified": 165,
+    "authoritative_compiled_xml_exact_match": true,
+    "frozen_source_and_tests_verified": 27
+  },
+  "workloads": {
+    "high_record_count_1000000": {
+      "accepted_count": 1000000,
+      "amount_usd": "100000.00",
+      "harness_seconds": 24.799871972999995,
+      "input_sha256_receipt": "3343519de934a7e8d56947820a8e293e0162762bc73049c7161c281c942ded26",
+      "issues": [],
+      "parser_seconds": 23.89314831699994,
+      "peak_rss_mib": 20.77734375,
+      "recorded_checks": 19,
+      "rejected_count": 0,
+      "rss_sample_count": 492,
+      "size_bytes": 93000084,
+      "status": "RECEIPT_CROSSCHECK_PASS"
+    },
+    "high_record_count_10000000": {
+      "accepted_count": 10000000,
+      "amount_usd": "1000000.00",
+      "harness_seconds": 234.97352252100006,
+      "input_sha256_receipt": "7f5997ff7b0e58bf5438244a0b946df1d31ee63fb41bf15cc29a3fb643aa64b0",
+      "issues": [],
+      "parser_seconds": 228.89097341500008,
+      "peak_rss_mib": 20.78515625,
+      "recorded_checks": 19,
+      "rejected_count": 0,
+      "rss_sample_count": 4670,
+      "size_bytes": 930000084,
+      "status": "RECEIPT_CROSSCHECK_PASS"
+    },
+    "physical_100gb": {
+      "accepted_count": 762405,
+      "amount_usd": "76240.50",
+      "harness_seconds": 5127.150411768,
+      "input_sha256_receipt": "39d0d6104a900229cdf278c8a1bd83e1a5b651fc1a46d5e1627bec0a5ed2c8f9",
+      "issues": [],
+      "parser_seconds": 4007.1392406069995,
+      "peak_rss_mib": 21.62109375,
+      "recorded_checks": 19,
+      "rejected_count": 0,
+      "rss_sample_count": 101807,
+      "size_bytes": 100000089504,
+      "status": "RECEIPT_CROSSCHECK_PASS"
+    },
+    "physical_150gb": {
+      "accepted_count": 1143607,
+      "amount_usd": "114360.70",
+      "harness_seconds": 8423.981149719,
+      "input_sha256_receipt": "1cd6ad96a699f9ef7293f1e85cb2038d90f8f94cc9cd04baafd8449ac9575001",
+      "issues": [],
+      "parser_seconds": 6480.2613112149975,
+      "peak_rss_mib": 21.2734375,
+      "recorded_checks": 19,
+      "rejected_count": 0,
+      "rss_sample_count": 167192,
+      "size_bytes": 150000068632,
+      "status": "RECEIPT_CROSSCHECK_PASS"
+    },
+    "smoke_16mib": {
+      "accepted_count": 511,
+      "amount_usd": "51.10",
+      "harness_seconds": 1.216602426999998,
+      "input_sha256_receipt": "acf6aec1735ca3fa5809aed6d332551bc6e24f9352d0fbc1f6c2e9647aaeb757",
+      "issues": [],
+      "parser_seconds": 0.5778871479999452,
+      "peak_rss_mib": 20.78515625,
+      "recorded_checks": 19,
+      "rejected_count": 0,
+      "rss_sample_count": 24,
+      "size_bytes": 16791544,
+      "status": "RECEIPT_CROSSCHECK_PASS"
+    }
+  }
+}

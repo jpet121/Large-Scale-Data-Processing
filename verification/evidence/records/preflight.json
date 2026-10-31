@@ -1,0 +1,24 @@
+{
+  "cgroup_memory_current": "240320512",
+  "cgroup_memory_max": "max",
+  "disk_free_bytes_linux_filesystem": 2000208764928,
+  "disk_total_bytes_linux_filesystem": 2000381014016,
+  "is_linux": true,
+  "linux_type": "WSL2_SIMULATED_LINUX_HOST",
+  "note": "WSL memory cap is not identical to dedicated physical 8 GB Linux hardware; Linux filesystem free space may not reflect free storage in the underlying Windows VHDX drive.",
+  "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+  "ram_bytes_reported_by_linux": 8328630272,
+  "ram_within_eight_gb_band": true,
+  "swap_kib": 0,
+  "timestamp_utc": "2026-10-31T01:24:56.089430+00:00",
+  "uname": {
+    "machine": "x86_64",
+    "node": "DESKTOP-2TCUM14",
+    "processor": "x86_64",
+    "release": "6.18.54.1-microsoft-standard-WSL2",
+    "system": "Linux",
+    "version": "#1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026"
+  },
+  "workdir": "/mnt/e/PEHAVOS_LAB/runs",
+  "wsl2_detected": true
+}

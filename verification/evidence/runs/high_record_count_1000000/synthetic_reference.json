@@ -1,0 +1,11 @@
+{
+  "bytes": 93000084,
+  "count": 1000000,
+  "expected_amount_usd_exact": "100000.00",
+  "generated_in_seconds": 2.047,
+  "input_name": "synthetic.csv",
+  "input_sha256": "3343519de934a7e8d56947820a8e293e0162762bc73049c7161c281c942ded26",
+  "non_sparse_all_bytes_written": true,
+  "padding_bytes_per_record": 0,
+  "synthetic_only": true
+}
