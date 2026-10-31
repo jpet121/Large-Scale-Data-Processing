@@ -34,7 +34,7 @@ The requirements called for correct transaction accounting, predictable failure 
 
 The central problem is straightforward: **file size should increase processing time, not cause memory usage to grow until the system crashes.** Correctness matters as much as speed. A file is not successfully processed if records are silently omitted, financial values change, or partially written output is mistaken for a complete result.
 
-The original client-style brief is retained as [Project Requirements](Project%20Requirements.MD). It is a portfolio scenario, **not a claim of a real client engagement**.
+The original client-style brief is retained as [Project Requirements](Streaming CSV Transaction Parser-Project Requirements & Acceptance Criteria.MD). It is a portfolio scenario, **not a claim of a real client engagement**.
 
 ## How it works
 
