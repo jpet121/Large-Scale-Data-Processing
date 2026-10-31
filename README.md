@@ -176,4 +176,4 @@ The mixed fixture deliberately includes records that may be rejected. Inspect th
 
 ---
 
-**Portfolio focus:** Building reliable, inspectable software with clear requirements, memory-bounded algorithms, exact financial accounting, meaningful failure behavior, reproducible verification, and accountable human decisions—even when AI assists in the development process.
+**Focus:** Building reliable, inspectable software with clear requirements, memory-bounded algorithms, exact financial accounting, meaningful failure behavior, reproducible verification, and accountable human decisions—even when AI assists in the development process.
